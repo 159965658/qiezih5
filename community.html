@@ -22,7 +22,7 @@
     <div class="content">
         <p>社区中心</p>
         <div class="right">
-            <a href="#"><img src="images/search_logo.png"></a>
+            <a href="search.html"><img src="images/search_logo.png"></a>
         </div>
     </div>
 </div>
@@ -39,6 +39,7 @@
 
         <div class="recommend-list">
             <div>
+                <!--热门帖子-->
                 <div class="item ">
                     <div class="title clearfix">
                         <span>热门帖子</span>
@@ -57,9 +58,10 @@
                     </div>
                 </div>
 
+                <!--热门活动-->
                 <div class="item ">
                     <div class="title">
-                        <span>热门帖子</span>
+                        <span>热门活动</span>
                         <a href="#">查看更多</a>
                     </div>
                     <div class="item_content">
@@ -71,12 +73,11 @@
                                 <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
                                 <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
                             </div>
-                            <!-- Add Pagination -->
-                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
 
+                <!--热门论坛-->
                 <div class="forum-list">
                     <div class="title">
                         <span>热门论坛</span>
@@ -103,9 +104,11 @@
                 </div>
 
             </div>
+
             <div>
+                <!--推荐-->
                 <div class="item">
-                    <div class="title title_t">
+                    <div class="title title_t clearfix">
                         <span>推荐</span>
                         <a href="#">查看更多</a>
                     </div>
@@ -141,9 +144,10 @@
             </div>
 
             <div>
+                <!--精选-->
                 <div class="item ">
                     <div class="title title_t">
-                        <span>游戏视频</span>
+                        <span>精选</span>
                         <a href="#">查看更多</a>
                     </div>
                     <div class="list-recommend">
@@ -199,7 +203,8 @@
                                 <div class="bottom">
                                     <p>《流星蝴蝶剑》大锤教学，仅此一份独家秘笈仅此一份独家秘笈仅此一份独家秘笈仅此一份独家秘笈仅此一份独家秘笈仅此一份独家秘笈</p>
 
-                                    <span class="view">5518</span>  <span class="message">33.2</span>
+                                    <span class="message">33.2</span>
+                                    <span class="view">5518</span>
                                 </div>
                             </a>
                         </div>
@@ -282,16 +287,7 @@
                     <p>2018LCK冬季赛第一周 TOP5</p>
                     <div class="list-recommend">
                         <div class="item">
-                            <a href="#" class="left">
-                                <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
-                                <div class="bottom">
-                                    <span class="user">Riot</span>
-                                    <span class="message">33.2</span>
-                                    <span class="view">5518</span>
-                                </div>
-                            </a>
-                            <a href="#" class="right">
-                                <img src="images/video_pic1.png" alt=""/>
+                            <a href="#"> <img src="images/video_pic1.png" alt=""/>
                             </a>
                         </div>
                         <div class="item">
@@ -352,18 +348,10 @@
                     </div>
 
 
-                    <p>2018LCK冬季赛第一周 TOP5</p>
+                    <p class="">2018LCK冬季赛第一周 TOP5</p>
                     <div class="list-recommend">
                         <div class="item">
-                            <a href="#" class="left">
-                                <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
-                                <div class="bottom">
-                                    <span class="user">Riot</span>
-                                    <span class="message">33.2</span>
-                                    <span class="view">5518</span>
-                                </div>
-                            </a>
-                            <a href="#" class="right">
+                            <a href="#" >
                                 <img src="images/video_pic2.png" alt=""/>
                             </a>
                         </div>
@@ -578,20 +566,20 @@
 	var swiper = new Swiper('.swiper-container-recommend', {
 		slidesPerView: 'auto',
 		paginationClickable: true,
-		spaceBetween: 30,
+		spaceBetween: 10,
         loop:true,
 	});
     var swiper = new Swiper('.swiper-container-activity', {
         slidesPerView: 'auto',
         paginationClickable: true,
-        spaceBetween: 30,
+        spaceBetween: 10,
         loop:true,
     });
 
     var swiper = new Swiper('.swiper-container-activity', {
         slidesPerView: 'auto',
         paginationClickable: true,
-        spaceBetween: 30,
+        spaceBetween: 10,
         loop:true,
     });
 	$(function () {
