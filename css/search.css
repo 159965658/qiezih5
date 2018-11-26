@@ -1,0 +1,171 @@
+
+.container {
+    margin-top: 0.8rem;
+    margin-bottom: 0.2rem;
+    /*width: 100%;*/
+}
+.swiper1 {
+    line-height: 0.8rem;
+    width: 100%;
+}
+.swiper1 span{
+
+    line-height: 0.8rem;
+    border-bottom: 2px solid #f2f5f7;
+}
+.swiper1 .selected span{
+
+    color: #1c9de1;
+    border-bottom: 2px solid #1c9de1;
+}
+.swiper1 .selected {
+}
+.swiper1 .swiper-slide {
+    background: #f2f5f7;
+    text-align: center;
+    font-size: 16px;
+    height: 0.8rem;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    cursor: none;
+}
+.swiper2 {
+    width: 100%;
+}
+.swiper2 .swiper-slide {
+    height: calc(100vh - 50px);
+    background-color: #ccc;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+}
+
+.search-hot,
+.search-history{
+    margin-top: 0.2rem;
+    padding: 0 0.3rem;
+}
+.search-history {
+    margin-top: 1.4rem;
+}
+.search-hot .title,
+.search-history .title{
+    margin-bottom: 0.4rem;
+    color: #333333;
+    font-size: 0.54rem;
+}
+.search-history .title{
+    display: flex;
+}
+.search-history .title span{
+    text-align: left;
+    line-height: 00.7rem;
+
+    flex: 1;
+    display: block;
+}
+.search-history .title a{
+    display: block;
+    width: 1rem;
+    font-size: 0.42rem;
+    color: #999999;
+    line-height: 00.7rem;
+    width: 1rem;
+    text-align: right;
+}
+.search-hot  ul li a{
+    color: #666666;
+    display: inline-block;
+    width: 100%;
+    line-height: 0.7rem;
+    height: 0.7rem;
+    overflow: hidden;
+}
+.search-hot ul li a span{
+    color: #f8952d;
+    margin-right: 0.1rem;
+    line-height: 0.7rem;
+    font-size: 0.42rem;
+    height: 0.7rem;
+    float: left;
+
+}
+.search-hot  ul li a b{
+    float: left;
+    line-height: 0.7rem;
+    height: 0.7rem;
+    font-weight: normal;
+    font-size: 0.42rem;
+    color: #666666;
+}
+.search-history ul li a{
+    display: flex;
+    width: 100%;
+    line-height: 0.8rem;
+    height: 0.8rem;
+    padding-left: 0.55rem;
+    background: url("../images/history_icon.png") no-repeat left center;
+    background-size: 0.4rem 0.4rem;
+}
+.search-history ul li span{
+    display: block;
+    flex: 1;
+    color: #666666;
+    line-height: 0.8rem;
+    height: 0.8rem;
+    font-size: 0.42rem;
+}
+.search-history ul li b{
+    width: 1rem;
+    font-weight: normal;
+    font-size: 0.55rem;
+    color: #666666;
+    text-align: right;
+    line-height: 0.8rem;
+    height: 0.8rem;
+}
+.search-history ul li b img{
+    width: 0.2rem;
+}
+.search .tab{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    left: 0;
+    margin-top: 1.3rem;
+    margin-bottom: 0.2rem;
+    background: #f2f5f7;
+    height: 1.2rem;
+}
+.search .tab p{
+    flex: 1;
+    text-align: center;
+    line-height:1.2rem;
+    height: 1.2rem;
+}
+
+.search .tab p span{
+    display: inline-block;
+    font-size: 0.48rem;
+    line-height: 1.17rem;
+    border-bottom: 0.03rem solid #f2f5f7;
+}
+.search .tab p span.active{
+    color: #557cff;
+    border-bottom: 0.03rem solid #557cff;
+}
+.search-content{
+    padding-top: 2.6rem;
+}

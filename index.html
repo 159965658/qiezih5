@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Title</title>
+
+    <script src="js/jquery-1.8.2.min.js"></script>
+
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+</head>
+<body>
+<script>
+	var html = document.getElementsByTagName('html')[0];
+	if(html){
+		var w = window.innerWidth;
+		var fontSize = (w>750?750:w)/750 * 100;
+		html.style.fontSize = fontSize + 'px';
+	}
+	window.onload = function(){
+		window.onresize = function(){
+			var w = window.innerWidth;
+			var fontSize = (w>750?750:w)/750 * 100;
+			html.style.fontSize = fontSize + 'px';
+		}
+	}
+</script>
+
+<style>
+    .product{
+        width: 100%;
+    }
+    .product .top-tab{
+        width: 100%;
+    }
+    .top-tab div{
+        width: 50%;
+        float: left;
+        height: 0.6rem;
+    }
+    .top-tab div span{
+        line-height: 0.45rem;
+        height: 0.45rem;
+        background: #e9eef3;
+        margin-top: 0.07rem;
+        text-align: center;
+        width: 1rem;
+        font-size: 0.24rem;
+        color: #666666;
+        display: inline-block;
+    }
+    .top-tab .recommend-btn{
+        text-align: right;
+    }
+
+    .top-tab .focus-btn span{
+        border-radius: 0 50px 50px 0;
+    }
+
+    .top-tab .recommend-btn span{
+
+        border-radius: 50px 0px 0px 50px;
+    }
+    .top-tab .focus-btn{
+       text-align: left;
+    }
+
+    .top-tab div span.active{
+        background: #557cff;
+        color: #fff;
+    }
+    .product-bottom{
+        padding: 0 0.3rem;
+    }
+    .product-content{
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        height: 100vh;
+    }
+    .product-content .recommend-list{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 200px;
+    }
+
+    .product-content .focus-list{
+        position: absolute;
+        left: 100%;
+        width: 100%;
+        height: 2.15rem;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 2.15rem;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        width: 80%;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide img{
+        width: 100%;
+    }
+    .product-content .title{
+        height: 0.85rem;
+        line-height: 0.85rem;
+    }
+
+    .product-content .title span{
+        line-height: 0.85rem;
+        color: #666;
+        font-size: 0.3rem;
+    }
+
+    .product-content .title a{
+        line-height: 0.85rem;
+        color: #1c9de1;
+        float: right;
+        font-size: 0.2rem;
+    }
+</style>
+
+
+<div class="product">
+    <div class="top-tab">
+        <div class="recommend-btn">
+            <span class="active">推荐</span>
+        </div>
+        <div class="focus-btn">
+            <span>关注</span>
+        </div>
+    </div>
+    <div class="product-bottom">
+
+        <div class="product-content">
+            <div class="recommend-list">
+                <div class="item hot">
+                    <div class="title clearfix">
+                        <span>热门帖子</span>
+                        <a href="#">查看更多</a>
+                    </div>
+                    <div class="item_content">
+                        <div class="swiper-container swiper-container-recommend">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="focus-list">
+
+                <div class="item hot">
+                    <div class="title">
+                        <span>热门帖子</span>
+                        <a href="#">查看更多</a>
+                    </div>
+                    <div class="item_content">
+                        <div class="swiper-container swiper-container-focus">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+	var swiper = new Swiper('.swiper-container-recommend', {
+		slidesPerView: 'auto',
+		paginationClickable: true,
+		spaceBetween: 30
+	});
+    var swiper = new Swiper('.swiper-container-focus', {
+	    slidesPerView: 'auto',
+	    paginationClickable: true,
+	    spaceBetween: 30
+    });
+	$(function () {
+	    $('.recommend-btn span').on('click',function () {
+		    $('.recommend-list').animate({left:'0'});
+		    $('.focus-list').animate({left:'100%'});
+	    })
+	    $('.focus-btn span').on('click',function () {
+		    $('.recommend-list').animate({left:'-100%'});
+		    $('.focus-list').animate({left:'0'});
+	    })
+    })
+</script>
+</body>
+</html>

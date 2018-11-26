@@ -1,0 +1,100 @@
+
+.complaints{
+    width: 100%;
+    margin-top: 1.3rem;
+}
+.complaints .complaints_info{
+    height: 2.7rem;
+    display: flex;
+    padding: 0.4rem 0.3rem;
+    border-bottom: 1px solid #dcdcdc;
+}
+.complaints_info .complaints_info_pic{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.4rem;
+}
+.complaints_info_right{
+    flex: 1;
+    position: relative;
+}
+.complaints_info .title{
+    text-align: left;
+    font-size: 0.48rem;
+    color: #333333;
+    font-weight: 700;
+}
+.complaints_info .vendor{
+    font-size: 0.4rem;
+    color: #999999;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.complaints_info .score{
+    position: absolute;
+    right: 0.5rem;
+    background: url("../images/hot_icon.png") no-repeat left 0.2rem;
+    background-size: 0.5rem;
+    line-height: 1rem;
+    height: 1rem;
+    top: 50%;
+    font-size: 0.54rem;
+    color: #f35c5e;
+    font-weight: 700;
+    padding-left: 0.6rem;
+    margin-top: -0.5rem;
+}
+
+
+.complaints_select{
+    padding:  0.3rem;
+    border-top: .25rem solid #f2f5f7;
+}
+
+.complaints_select .title{
+    font-size: 0.42rem;
+    text-align: left;
+    color: #999999;
+}
+
+.complaints_select ul li{
+    border-bottom:0.01rem solid  #d5d5d5;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    display: flex;
+}
+
+.complaints_select ul li span{
+    color: #333333;
+    display: block;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    font-size: 0.42rem;
+}
+
+.complaints_select ul li span:first-child{
+
+    flex: 1;
+}
+.complaints_select ul li .select_btn{
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-top: 0.4rem;
+    display: block;
+    border: 0.05rem solid #d5d5d5;
+    border-radius: 100%;
+
+}
+
+.complaints_select ul li .select_btn_active{
+    background: url("../images/checkbox_active_icon.png") no-repeat center;
+    background-size: 100%;
+    border: 0.05rem solid #557cff;
+}
+
+.supplement{
+    
+}

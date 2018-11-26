@@ -1,0 +1,557 @@
+
+.more_right{
+    position: absolute;
+    right: 0.3rem;
+    height: 0.6rem;
+    top: 50%;
+    margin-top: -0.4rem;
+
+}
+
+.more_right img{
+    width: 0.15rem;
+    height: 100%;
+}
+
+
+.hotBBS .list {
+    padding: 0 0.3rem 1.5rem;
+    margin-top: 1.3rem;
+}
+.hotBBS .list .item{
+    padding: 0.4rem 0;
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    box-sizing: content-box;
+    position: relative;
+    border-bottom: 1px solid #dcdcdc;
+}
+.hotBBS .list .item .btn{
+    background: #557cff;
+    text-align: center;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.4rem;
+    color: #fff;
+    right: 0;
+    top: 50%;
+    width: 1.85rem;
+    border-radius: 30px;
+    margin-top: -0.3rem;
+    position: absolute;
+}
+.hotBBS .list .item .active{
+    background: #c8cee0;
+}
+.hotBBS .list .item .right {
+    position: relative;
+    flex: 1;
+    border-bottom: 0;
+}
+.hotBBS .list .item .right .top{
+    color: #333333;
+    font-size: 0.48rem;
+}
+.hotBBS .list .item .right .bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.hotBBS .list .item .right .bottom p{
+    float: left;
+    margin-right: 0.2rem;
+}
+.hotBBS .list .item .right .bottom p span{
+    line-height: 0.4rem;
+    font-size: 0.4rem;
+    color: #999999;
+
+}
+.hotBBS .list .item .left{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.4rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.hotBBS .list .item .left img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.bbsDetails{
+    padding: 0 0.3rem;
+    margin-top: 1.6rem;
+}
+
+.bbsDetails .swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+
+
+.bbsDetails {
+
+    border-bottom: 0.2rem solid #f2f5f7;
+}
+.bbsDetails .bbsInfo{
+    display: flex;
+    width: 100%;
+    padding: 0.4rem 0;
+}
+.bbsDetails .bbsInfo .info_pic{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.3rem;
+}
+.bbsDetails .bbsInfo .info_pic img{
+    width: 100%;
+}
+.bbsDetails .bbsInfo .info_details {
+    position: relative;
+    height: 1.2rem;
+    flex: 1;
+}
+.bbsDetails .bbsInfo .info_details .info_top{
+    font-size: 0.42rem;
+    color: #333333;
+    font-weight: 600;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-align: left;
+}
+.bbsDetails .bbsInfo .info_details .info_bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+
+}
+.bbsDetails .bbsInfo .info_details .info_bottom p{
+    margin-right: 0.3rem;
+    float: left;
+}
+.bbsDetails .bbsInfo .info_details .info_bottom span{
+    float: left;
+    color: #999999;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    font-size: 0.38rem;
+}
+.bbsDetails .bbsInfo .info_details .info_bottom{
+    float: left;
+
+}
+.bbsDetails .bbsInfo .info_details .info_btn{
+    position: absolute;
+    right: 0;
+    margin-top: -0.4rem;
+    border-radius: 30px;
+    width: 1.90rem;
+    height: 0.80rem;
+    top: 50%;
+    line-height: 0.8rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.4rem;
+    background: #557cff;
+}
+.stick_list{
+    padding: 0 0.3rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 0.2rem solid #f2f5f7;
+}
+
+.stick_list .stick_item a{
+    height: 1.4rem;
+    border-bottom: 0.01rem solid #dcdcdc;
+    display: flex;
+}
+.stick_list .stick_item span{
+    display: block;
+    width: 1.4rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #f8952d;
+    border-radius: 5px;
+    border: 1px solid #f8952d;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    justify-content: center;
+    margin-top: 0.25rem;
+    margin-right: 0.25rem;
+}
+.stick_list .stick_item p{
+    flex: 1;
+    display: block;
+    overflow: hidden;
+    font-size: 0.42rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.4rem;
+}
+.bbs_list .bbs_item{
+    border-bottom: 1px solid #dbdbdb;
+    padding: 0 0.3rem;
+}
+.bbs_list{
+    border-top: 1px solid #dcdcdc;
+}
+.bbs_tab{
+    display: flex;
+    padding: 0 0.3rem;
+}
+
+.bbs_tab .bbs_tab_left{
+    width: 80%;
+    float: left;
+    display: flex;
+}
+.bbs_tab .bbs_tab_left p{
+    flex: 1;
+    text-align: left;
+    font-size: 0.48rem;
+    line-height: 1.2rem;
+    color: #333333;
+    font-weight: 600;
+}
+.bbs_tab .bbs_tab_left p span{
+    float: left;
+    line-height: 1.2rem;
+    font-size: 0.48rem;
+    color: #333333;
+    font-weight: 600;
+}
+.bbs_tab .bbs_tab_left p.active span{
+    color: #557cff;
+    border-bottom: 0.03rem solid #557cff;
+
+}
+.bbs_tab .bbs_tab_rank{
+    float: right;
+    line-height: 1.2rem;
+    width: 20%;
+    text-align: center;
+}
+.bbs_tab .bbs_tab_rank img{
+    height: 0.5rem;
+}
+
+
+.bbs_item_info{
+    display: flex;
+    margin: 0.3rem auto;
+}
+
+.bbs_item_info .bbs_item_info_pic{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.25rem;
+    overflow: hidden;
+}
+
+.bbs_item_info .bbs_item_info_pic img{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+.bbs_item_info_content{
+    flex: 1;
+}
+.bbs_item_info_content .title{
+    font-size: 0.4rem;
+    font-weight: 600;
+    color: #333333;
+    line-height: 0.6rem;
+}
+.bbs_item_info_content .time{
+    font-size: 0.34rem;
+    color: #999999;
+    line-height: 0.5rem;
+}
+
+.bbs_item_info_details .title{
+    line-height: 0.7rem;
+    height: 0.7rem;
+    font-size: 0.42rem;
+    color: #333333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.bbs_item_info_details .tps{
+    color: #999999;
+    line-height: 1rem;
+    height: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 0.4rem;
+}
+
+.bbs_item_info_banner{
+    display: flex;
+
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin-bottom: 0.1rem;
+}
+.bbs_item_info_banner a{
+    border-radius: 10px;
+    display: block;
+    overflow: hidden;
+    height: 2.5rem;
+    width: 32%;
+}
+
+.bbs_item_info_banner1 a{
+    width: 100%;
+    height: 5.4rem;
+}
+.bbs_item_info_banner a img{
+    width: 100%;
+    height: 100%;
+}
+.bbs_item_info_meta{
+    height: 1rem;
+}
+
+.bbs_item_info_meta span{
+    display: inline-block;
+    line-height: 1rem;
+    color: #999999;
+    font-size: 0.36rem;
+    margin-left: 0.2rem;
+    margin-right: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+
+
+.bbs_item_info_meta  .message{
+    float: left;
+    background: url("../images/message_icon.png") no-repeat left 0.33rem;
+    background-size:auto 10px;
+}
+
+.bbs_item_info_meta  .praise{
+    float: left;
+    background: url("../images/praise_icon.png") no-repeat left 0.3rem;
+    background-size:auto  10px;
+}
+
+
+
+.bbs_item_info_meta .shits{
+    float: left;
+    background: url("../images/shits_icon.png") no-repeat left  0.35rem;
+    background-size:auto  10px;
+}
+
+.new_post{
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    width: 1.74rem;
+    height: 1.74rem;
+}
+
+
+.bbs_label{
+    line-height: 1rem;
+    height: 1rem;
+    position: relative;
+}
+.bbs_label span{
+    height: 0.8rem;
+    display: inline-block;
+    float: left;
+    line-height: 0.8rem;
+    background: #f2f5f7;
+    border-radius: 30px;
+    width: 1.90rem;
+    margin-right: 0.2rem;
+    text-align: center;
+    color: #999999;
+    font-size: 0.4rem;
+}
+.bbs_label .score{
+    position: absolute;
+    right: 0.5rem;
+    background: url("../images/hot_icon.png") no-repeat left 0.2rem;
+    background-size: 0.5rem;
+    line-height: 1rem;
+    height: 1rem;
+    top: 50%;
+    font-size: 0.54rem;
+    color: #f35c5e;
+    font-weight: 700;
+    padding-left: 0.6rem;
+    margin-top: -0.5rem;
+}
+
+.bbs_vendor{
+    font-size: 0.38rem;
+    text-align: left;
+    color: #999;
+    line-height: 1.2rem;
+    height: 1.2rem;
+}
+
+.bbs_operation{
+    display: flex;
+    margin-bottom: 0.5rem;
+    justify-content: space-between;
+}
+
+.bbs_operation div{
+    width: 48%;
+
+}
+.bbs_operation div.focus{
+}
+.bbs_operation div.focus span{
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    border-radius: 10px;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    text-align: center;
+    font-size: 0.4rem;
+    transition: 0.3s;
+    background: #557cff;
+}
+.bbs_operation div.focus span.active{
+    background: #f35c5e;
+}
+.bbs_operation div.grade{
+    border-radius: 10px;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    text-align: center;
+    border:1px solid #f8952d;
+    justify-content: center;
+    display: flex;
+}
+.bbs_operation div.grade span{
+    display: block;
+    width: 1.4rem;
+    line-height: 1.1rem;
+    height: 1.1rem;
+    color: #f8952d;
+    font-size: 0.4rem;
+}
+.bbs_operation div.grade #star{
+    line-height: 1rem;
+}
+
+.bbs_bottom{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    border-top: 1px solid #dcdcdc;
+    bottom: 0;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    background: #fff;
+    display: flex;
+}
+.bbs_bottom .comment{
+    text-align: center;
+    flex: 1;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    color: #557cff;
+    font-size: 0.42rem;
+    background: url("../images/border-icon.png")no-repeat right center;
+    background-size: 1px 40%;
+}
+
+.bbs_bottom .comment a{
+    color: #557cff;
+    font-size: 0.42rem;
+
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+.bbs_bottom .pgc{
+    flex: 1;
+    font-size: 0.42rem;
+    text-align: center;
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.mask{
+    height: 100vh;
+    width: 100%;
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+
+}
+.mask_bg{
+
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    left: 0;
+    bottom: 0;
+    z-index: 998;
+}
+.mask .mask_content{
+    padding:1.2rem 0.3rem;
+    width: 100%;
+    background: #fff;
+    height: 8.8rem;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+
+}
+
+.mask .mask_content .item{
+    width: 33.3%;
+    height: 3.7rem;
+    text-align: center;
+    float: left;
+}
+.mask .mask_content .item .logo{
+    text-align: center;
+    height: 1.9rem;
+}
+.mask .mask_content .item .logo img{
+    width: 1.6rem;
+}
