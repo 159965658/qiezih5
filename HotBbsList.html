@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <title>热门论坛</title>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="js/jquery-1.8.2.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/pullToRefresh.css"/>
+    <script src="js/iscroll.js"></script>
+    <script src="js/pullToRefresh.js"></script>
+    <script src="js/colorful.js"></script>
     <script src="js/common.js"></script>
 
-    <link rel="stylesheet" href="css/common.css"/>
     <link rel="stylesheet" href="css/hotBBS.css">
 </head>
 <body>
@@ -23,9 +27,20 @@
         </div>
     </div>
 </div>
-<div class="hotBBS">
-    <div class="list">
-        <div class="item">
+<style>
+    .hotBBS{
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background-color: #fff;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+</style>
+<div class="hotBBS" id="wrapper">
+    <ul class="list">
+        <li>   <div class="item">
             <div class="left">
                 <img src="images/hotBBS_pic.png" alt="">
             </div>
@@ -37,7 +52,66 @@
                 </div>
                 <div class="btn">+关注</div>
             </div>
-        </div>
+        </div></li>
+
+        <li>   <div class="item">
+            <div class="left">
+                <img src="images/hotBBS_pic.png" alt="">
+            </div>
+            <div class="right">
+                <div class="top">吃鸡秘笈</div>
+                <div class="bottom">
+                    <p><span>主题数：</span><span>26112</span></p>
+                    <p><span>关注人数：</span><span>400302</span></p>
+                </div>
+                <div class="btn">+关注</div>
+            </div>
+        </div></li>
+
+        <li>   <div class="item">
+            <div class="left">
+                <img src="images/hotBBS_pic.png" alt="">
+            </div>
+            <div class="right">
+                <div class="top">吃鸡秘笈</div>
+                <div class="bottom">
+                    <p><span>主题数：</span><span>26112</span></p>
+                    <p><span>关注人数：</span><span>400302</span></p>
+                </div>
+                <div class="btn">+关注</div>
+            </div>
+        </div></li>
+
+        <li>   <div class="item">
+            <div class="left">
+                <img src="images/hotBBS_pic.png" alt="">
+            </div>
+            <div class="right">
+                <div class="top">吃鸡秘笈</div>
+                <div class="bottom">
+                    <p><span>主题数：</span><span>26112</span></p>
+                    <p><span>关注人数：</span><span>400302</span></p>
+                </div>
+                <div class="btn">+关注</div>
+            </div>
+        </div></li>
+
+        <li>   <div class="item">
+            <div class="left">
+                <img src="images/hotBBS_pic.png" alt="">
+            </div>
+            <div class="right">
+                <div class="top">吃鸡秘笈</div>
+                <div class="bottom">
+                    <p><span>主题数：</span><span>26112</span></p>
+                    <p><span>关注人数：</span><span>400302</span></p>
+                </div>
+                <div class="btn">+关注</div>
+            </div>
+        </div></li>
+    </ul>
+<!--    <div class="list">
+
 
         <div class="item">
             <div class="left">
@@ -124,7 +198,39 @@
             </div>
         </div>
 
-    </div>
+    </div>-->
 </div>
+
 </body>
+
+<script>
+	refresher.info ={
+	    "pullDownLable": "Pull down to refresh...",
+	    "pullingDownLable": "Release to refresh...",
+	    "pullUpLable": "Pull up to load more...",
+	    "pullingUpLable": "Release to load more...",
+	    "loadingLable": "Loading..."
+	}
+	refresher.init({
+		id:"wrapper",
+		pullDownAction:Refresh,
+		pullUpAction:Load
+	});
+	function Refresh() {
+	    setTimeout(function () {
+
+	        wrapper.refresh()
+	        console.log(111)
+	    }, 1000);
+
+	}
+
+	function Load() {
+	    setTimeout(function () {
+
+		    wrapper.refresh()
+		    console.log(111)
+	    }, 1000);
+	}
+</script>
 </html>
