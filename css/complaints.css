@@ -96,5 +96,53 @@
 }
 
 .supplement{
-    
+    padding: 0.3rem;
+}
+
+.supplement .supplement_title{
+
+}
+
+.supplement .supplement_content{
+    width: 100%;
+}
+
+.supplement .supplement_content textarea{
+    width: 100%;
+    height: 2rem;
+    resize: none;
+    border: none;
+}
+
+.wordwrap{
+    text-align: right;
+    width: 100%;
+    font-size: 0.42rem;
+    color: #999999;
+    display: block;
+}
+.wordwrap .word{
+    font-style: normal;
+    font-size: 0.42rem;
+    color: #999999;
+}
+
+.supplement_bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.3rem 0 ;
+}
+
+.supplement_bottom .supplement_bottom_btn{
+    text-align: center;
+    border-radius: 10px;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    width: 90%;
+    margin: 0 auto;
+    background: #557cff;
+    color: #fff;
 }

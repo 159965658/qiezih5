@@ -65,10 +65,12 @@
     <div class="supplement">
         <div class="supplement_title">补充说明（选填）</div>
         <div class="supplement_content">
-            <textarea placeholder="请输入补充说明">
-
-            </textarea>
+            <textarea placeholder="请输入补充说明"></textarea>
+            <span class="wordwrap"><var class="word">200</var>/200</span>
         </div>
+    </div>
+    <div class="supplement_bottom">
+        <div class="supplement_bottom_btn">提交</div>
     </div>
 </div>
 </body>
@@ -81,6 +83,26 @@
             $('.complaints_select .select_btn').removeClass('select_btn_active') ;
             $(this).find('.select_btn').addClass('select_btn_active') ;
             console.log($(this).find('.select_content').html())
-        })
-    })
+        });
+
+
+	    var wordCount = $(".supplement_content"),
+		    textArea = wordCount.find("textarea"),
+		    word = wordCount.find(".word");
+	    //调用
+	    statInputNum(textArea,word);
+
+    }) ;
+
+    function statInputNum(textArea,numItem) {
+	    var max = numItem.text(),
+		    curLength;
+	    textArea[0].setAttribute("maxlength", max);
+	    curLength = textArea.val().length;
+	    numItem.text(max - curLength);
+	    textArea.on('input propertychange', function () {
+		    var _value = $(this).val().replace(/\n/gi,"");
+		    numItem.text(max - _value.length);
+	    });
+    }
 </script>
