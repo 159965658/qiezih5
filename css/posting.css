@@ -1,4 +1,18 @@
 
+.more_right{
+    position: absolute;
+    right: 0.3rem;
+    height: 0.6rem;
+    top: 50%;
+    margin-top: -0.4rem;
+
+}
+
+.more_right img{
+    width: 0.15rem;
+    height: 100%;
+}
+
 .posting_top .content{
     height: 1.4rem;
     background: #fff;
@@ -34,5 +48,483 @@
 }
 .posting_content{
     height: 2rem;
-    margin-top: 1.3rem;
+    padding:1.3rem 0.3rem 0;
+}
+#content{
+    padding: 0 0.3rem;
+}
+.posting_title{
+    height: 1.5rem;
+    line-height: 1.5rem;
+    width: 100%;
+    padding: 0 0.3rem;
+    position: relative;
+}
+.posting_title .wordwrap{
+    position: absolute;
+    height: 1.5rem;
+    right: 0.3rem;
+    top: 0;
+    font-size: 0.3rem;
+    line-height: 1.5rem;
+}
+.posting_title .wordwrap .word{
+    font-style: normal;
+}
+.posting_title textarea{
+    width: 100%;
+    border: none;
+    resize: none;;
+    outline:none ;
+    border-bottom: 1px solid #dcdcdc;
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+.posting_bottom{
+
+
+    height: 1.4rem;
+    padding: 0 0.3rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: #fff;
+}
+.upload-button{
+    float: left;
+    margin-top: 0.4rem;
+}
+
+.upload-img{
+    background: url("../images/images_icon.png") no-repeat center;
+    width: 0.6rem;
+    height: 0.5rem;
+    display: block;
+    background-size: 100%;
+    float: left;
+}
+
+.posting_bottom_left{
+    float: right;
+}
+.posting_bottom_left img{
+    height: 0.8rem;
+    width: 0.8rem;
+    float: left;
+    margin-right: 0.2rem;
+    margin-top: 0.3rem;
+}
+.posting_bottom_left span{
+    float: left;
+    font-size: .42rem;
+    color: #333333;
+    line-height: 1.4rem;
+}
+.mask .mask_content{
+    height: 4.5rem;
+    background: #fff;
+    padding: 1rem;
+    width: 8rem;
+    position: absolute;
+    left: 50%;
+    border-radius: 10px;
+    text-align: center;
+    top: 50%;
+    margin-left: -4rem;
+    margin-top: -2.25rem;
+
+}
+.mask .mask_content img{
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+.mask .mask_content p{
+    text-align: center;
+    font-size: .48rem;
+    color: #999999;
+}
+
+
+.postDetails{
+    padding: 1.3rem  0.3rem 0;
+}
+.postDetails_title {
+    height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: left;
+
+    font-size: 0.54rem;
+    color: #333333;
+    font-weight: 700;
+}
+.postDetails_info{
+    height: 1.9rem;
+    padding: 0.3rem 0;
+    display: flex;
+}
+.postDetails_info .postDetails_info_pic{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+}
+.postDetails_info .postDetails_info_pic img{
+    width: 100%;
+    height: 100%;
+}
+.postDetails_info_right{
+    flex: 1;
+    position: relative;
+}
+.postDetails_info_right .name{
+    font-size: 0.4rem;
+    color: #333333;
+    line-height: 0.5rem;
+
+}
+.postDetails_info_right .name1{
+    font-size: 0.34rem;
+    line-height: 0.5rem;
+    color: #999999;
+}
+.postDetails_info_right .view{
+    position: absolute;
+    top: 0;
+    height: 1rem;
+    right: 0.3rem;
+    background: url("../images/view_icon.png") no-repeat center left;
+    background-size: 0.5rem;
+    line-height: 1rem;
+    padding-left: 0.7rem;
+    font-size: 0.36rem;
+    color: #999999;
+}
+
+.postDetails_content p span{
+    font-size: 0.42rem;
+    display: block;
+    color: #999999;
+    line-height: 0.8rem;
+    text-indent: 30px;
+}
+
+.postDetails_content p img{
+    width: 100%;
+    margin-top: 0.3rem;
+}
+
+.postDetails_operation{
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    border-bottom: 0.2rem solid #f2f5f7;
+    display: flex;
+}
+
+.postDetails_operation div{
+    width: 0.8rem;
+    height: 0.8rem;
+    margin:  0 0.3rem;
+}
+
+
+.postDetails_item{
+    border-bottom: 1px solid #f2f5f7;
+    display: flex;
+    position: relative;
+    padding: 0.4rem;
+}
+
+.postDetails_item .postDetails_item_pic{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.2rem;
+}
+.postDetails_item .postDetails_item_pic img{
+    width: 100%;
+    height: 100%;
+}
+.postDetails_item .postDetails_item_right{
+    flex: 1;
+}
+.postDetails_item .postDetails_item_right .p1{
+    font-size: 0.48rem;
+    color: #333333;
+}
+.postDetails_item .postDetails_item_right .p2{
+    font-size: 0.4rem;
+    color: #999999;
+}
+
+
+.postDetails_item .score{
+    position: absolute;
+    right: 0.5rem;
+    background: url("../images/hot_icon.png") no-repeat left 0.2rem;
+    background-size: 0.5rem;
+    line-height: 1rem;
+    height: 1rem;
+    top: 50%;
+    font-size: 0.54rem;
+    color: #f35c5e;
+    font-weight: 700;
+    padding-left: 0.6rem;
+    margin-top: -0.5rem;
+}
+
+
+.postDetails_reply{
+    height: 1.5rem;
+    padding: 0 0.3rem;
+}
+
+.postDetails_reply .title{
+    float: left;
+    color: #333333;
+    font-size: 0.48rem;
+
+}
+.postDetails_reply .title span{
+    line-height: 1.5rem;
+}
+.postDetails_reply .title .num{
+    font-size: 0.42rem;
+    color: #333333;
+
+}
+
+.postDetails_reply .operation {
+    width: 100%;
+    text-align: right;
+}
+
+.postDetails_reply .operation span{
+    line-height: 1.5rem;
+    margin-left: 0.4rem;
+    font-size: 0.4rem;
+    color: #666666;
+    display: inline-block;
+
+}
+.postDetails_reply .operation span.positive_sequence{
+    padding-right: 0.45rem;
+    background: url("../images/top_icon.png") no-repeat center right;
+    background-size: 0.3rem;
+}
+
+
+.postDetails_reply .operation span.reverse_order{
+    padding-right: 0.45rem;
+    background: url("../images/order_icon.png") no-repeat center right;
+    background-size: 0.3rem;
+
+}
+.postDetails_reply .operation span.building{
+    padding-left: 0.7rem;
+    background: url("../images/checkbox_active_icon3.png") no-repeat center left;
+    background-size: 0.5rem;
+}
+.postDetails_reply .list .item{
+    padding: 0.4rem 0;
+}
+
+.postDetails_reply .list .item .top{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.postDetails_reply .list .item .top .info .title{
+    font-size: 0.42rem;
+    color: #333333;
+    text-align: left;
+}
+.postDetails_reply .list .item .top .info .floor{
+    font-size: 0.34rem;
+    color: #999999;
+    text-align: left;
+}
+.postDetails_reply .list .item .top .pic{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.3rem;
+}
+
+.postDetails_reply .list .item .btn span{
+
+    margin-left: 0.3rem;
+}
+.postDetails_reply .list .item .btn{
+    font-size: 0.34rem;
+    position: absolute;
+    right: 0.3rem;
+    top: 0;
+    color: #999999;
+}
+.postDetails_reply .list .content{
+    font-size: 0.42rem;
+    color: #666666;
+    margin: 0.2rem 0;
+    line-height: 0.7rem;
+}
+
+.postDetails_reply .bottom .operation {
+    text-align: right;
+
+}
+
+.postDetails_reply .bottom .operation .message {
+    background: url("../images/message_icon.png") no-repeat left center;
+    padding-left: 0.55rem;
+    background-size: 0.45rem;
+}
+
+
+
+.postDetails_reply .bottom .operation .praise {
+    background: url("../images/praise_icon.png") no-repeat left center;
+    padding-left: 0.55rem;
+    background-size: 0.45rem;
+}
+
+.postDetails_reply .bottom .operation .shits {
+    background: url("../images/shits_icon.png") no-repeat left center;
+    padding-left: 0.55rem;
+    background-size: 0.45rem;
+}
+
+.postDetails_reply .leave_message span{
+    font-size: .42rem;
+}
+.postDetails_reply .leave_message .id{
+    color: #5c88d5;
+}
+
+.no_more{
+    padding-bottom: 1.5rem;
+    box-sizing: content-box;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: .34rem;
+    color: #999999;
+}
+.postDetails_bottom{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 1.5rem;
+    background: #fff;
+    display: flex;
+    border-top: 1px solid #dcdcdc;
+}
+.postDetails_bottom .btn{
+    border: 1px solid #dcdcdc;
+    text-align: left;
+    margin-left: 0.3rem;
+    height: 1.1rem;
+    text-indent: 0.2rem;
+    border-radius: 10px;
+    margin-top: 0.15rem;
+    width: 9rem;
+    background: #f2f5f7;
+}
+.postDetails_bottom .btn a{
+    color: #999999;
+    font-size: 0.42rem;
+    display: block;
+    line-height: 1.1rem;
+
+}
+.postDetails_bottom .msg{
+    flex: 1;
+    text-align: right;
+    padding-right: 0.3rem;
+    line-height: 1.5rem;
+    position: relative;
+}
+.postDetails_bottom .msg img{
+    width: 0.8rem;
+    margin-right: 0.3rem;
+}
+.postDetails_bottom .msg span{
+    background: red;
+    color: #fff;
+    right: 0.3rem;
+    top: 0.2rem;
+    transform: scale(0.8);
+    font-size: 0.3rem;
+    border-radius: 100%;
+    padding: 0.1rem;
+    line-height: 0.5rem;
+    position: absolute;
+}
+
+
+
+.replyList{
+    box-sizing: content-box;
+    padding-top: 1.3rem;
+    border-bottom: 1px solid #ededed;
+}
+.replyList .list .item{
+    border-bottom: 1px solid #ededed;
+}
+.replyList .list .info p{
+    width: 100%;
+}
+.replyList .list .info{
+    flex: 1;
+}
+.replyList .list .info .clearfix{
+    width: 100%;
+}
+.replyList .list .info .clearfix .time{
+    float: left;
+    margin: 0;
+}
+.replyList .list .info .clearfix span{
+    float: right;
+    color: #999999;
+    font-size: 0.32rem;
+    margin-left: 0.5rem;
+}
+.replyList .list .info .clearfix span.praise{
+    background: url("../images/praise_icon.png") no-repeat left center;
+    background-size: 0.4rem;
+    padding-left: .55rem;
+}
+.replyMask .mask_content{
+    height: auto;
+}
+.replyMask  .mask_content .content{
+    text-align: center;
+    color: #666666;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.48rem;
+}
+.replyMask  .mask_content .title{
+    font-size: 0.48rem;
+    line-height: 2rem;
+}
+.replyMask  .mask_content{
+    padding: 0;
+}
+.replyMask  .mask_content .footer{
+    height: 1.65rem;
+    border-top: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.replyMask  .mask_content .footer div{
+    text-align: center;
+    flex: 1;
+}
+.replyMask  .mask_content .footer div:first-child{
+    background: url("../images/border-left-bg1.png") no-repeat right center;
+    background-size: 1px 70%;
 }

@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>写主题帖</title>
+    <title>回复楼主</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
 
 <div class="posting_top content_top">
     <div class="content">
-        <p>写主题帖</p>
+        <p>回复楼主</p>
         <div class="left">
             <a href="javascript:history.go(-1)"><img src="images/close_icon2.png"></a>
         </div>
@@ -26,10 +26,6 @@
     </div>
 </div>
 <div class="posting_content">
-    <div class="posting_title">
-        <textarea placeholder="标题（必填，不超过30个字）"></textarea>
-        <span class="wordwrap"><var class="word">20</var>/20</span>
-    </div>
     <div class="article-content" id="content">
     </div>
 </div>
@@ -39,10 +35,6 @@
     <div class="upload-button">
         <span class="upload"><i class="upload-img"></i></span>
         <input class="input-file" id="imageUpload" type="file" name="fileInput"  accept="image/*" style="position:absolute;left:0;opacity:0;width:100%;">
-    </div>
-    <div class="posting_bottom_left clearfix">
-        <img src="images/hotBBS_pic.png" alt="">
-        <span>想不想修真：凡人传说</span>
     </div>
 </div>
 
@@ -60,7 +52,7 @@
 <script>
 
 	$(function(){
-        $('#content').css({'height':$(window).height()-$('.content_top').height()-$('.posting_title').height()-$('.posting_bottom').height()-50+'px'});
+        $('#content').css({'height':$(window).height()-$('.content_top').height()-$('.posting_bottom').height()-50+'px'});
 	    $('.published').on('click',function(){
 		    $('.mask').fadeIn() ;
 	    });
@@ -68,26 +60,8 @@
 		    $('.mask').fadeOut() ;
 	    })
 
-		var wordCount = $(".posting_title"),
-			textArea = wordCount.find("textarea"),
-			word = wordCount.find(".word");
-		//调用
-		statInputNum(textArea,word);
 
 	}) ;
-
-	function statInputNum(textArea,numItem) {
-		var max = numItem.text(),
-			curLength;
-		textArea[0].setAttribute("maxlength", max);
-		curLength = textArea.val().length;
-		numItem.text(max - curLength);
-		textArea.on('input propertychange', function () {
-			var _value = $(this).val().replace(/\n/gi,"");
-			numItem.text(max - _value.length);
-		});
-	}
-
 	$('#content').artEditor({
 		imgTar: '#imageUpload',
 		limitSize: 5,   // 兆

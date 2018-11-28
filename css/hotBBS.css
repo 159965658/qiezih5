@@ -15,6 +15,8 @@
 
 
 .hotBBS .list {
+    overflow-y: scroll;
+
     padding: 0 0.3rem 1.5rem;
     margin-top: 1.3rem;
 }
@@ -220,6 +222,10 @@
 .bbs_list{
     border-top: 1px solid #dcdcdc;
 }
+.recommend_list{
+    padding-top: 1.3rem;
+    box-sizing: content-box;
+}
 .bbs_tab{
     display: flex;
     padding: 0 0.3rem;
@@ -357,6 +363,12 @@
 
 
 
+.bbs_item_info_meta  .view{
+
+    float: right;
+    background: url("../images/view_icon.png") no-repeat left 0.33rem;
+    background-size:auto 10px;
+}
 .bbs_item_info_meta  .message{
     float: left;
     background: url("../images/message_icon.png") no-repeat left 0.33rem;
@@ -512,25 +524,6 @@
     line-height: 1.5rem;
 }
 
-.mask{
-    height: 100vh;
-    width: 100%;
-    display: none;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: 999;
-
-}
-.mask_bg{
-
-    height: 100vh;
-    width: 100%;
-    background: rgba(0,0,0,0.3);
-    left: 0;
-    bottom: 0;
-    z-index: 998;
-}
 .mask .mask_content{
     padding:1.2rem 0.3rem;
     width: 100%;

@@ -89,6 +89,29 @@ body{
     max-width: 750px;
     margin: 0 auto;
 }
+
+
+
+.mask{
+    height: 100vh;
+    width: 100%;
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+
+}
+.mask_bg{
+
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    left: 0;
+    bottom: 0;
+    z-index: 998;
+}
+
 .content_top{
     height: 1.3rem;
     position: fixed;

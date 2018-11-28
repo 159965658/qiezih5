@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>2楼回帖</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/posting.css">
+    <script type="text/javascript" src="js/jquery.raty.min.js"></script>
+</head>
+<body>
+<style>
+</style>
+<div class="content_top">
+    <div class="content">
+        <p>2楼回帖</p>
+        <div class="left">
+            <a href="javascript:history.go(-1)"><img src="images/back_icon.png"></a>
+        </div>
+        <div class="more_right">
+            <a>
+                <img src="images/more_icon.png" alt=""/>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="postDetails_reply replyList">
+    <div class="title">
+        <span>全部回复</span>
+        <span class="num">（323）</span>
+    </div>
+    <div class="operation">
+        <span class="positive_sequence">正序</span>
+        <span class="reverse_order">倒序</span>
+    </div>
+    <div class="list">
+        <div class="item">
+            <div class="top">
+                <div class="pic"><img src="images/bbs_details_pic.png" alt=""/></div>
+                <div class="info">
+                    <p class="title">吃鸡秘笈</p>
+                    <p class="clearfix">
+                        <span class="time">6天前</span>
+                        <span class="praise">63</span>
+                        <span class="reply">回复</span>
+                        <span class="delete">删除</span>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="content">游戏画面不错游戏画面不错游戏画面不错游戏画面不错游戏画面不错，老手法，简单易上手</div>
+            </div>
+        </div>
+
+
+        <div class="item">
+            <div class="top">
+                <div class="pic"><img src="images/bbs_details_pic.png" alt=""/></div>
+                <div class="info">
+                    <p class="title">吃鸡秘笈</p>
+                    <p class="clearfix">
+                        <span class="time">6天前</span>
+                        <span class="praise">63</span>
+                        <span class="reply">回复</span>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="content">游戏画面不错游戏画面不错游戏画面不错游戏画面不错游戏画面不错，老手法，简单易上手</div>
+            </div>
+        </div>
+
+
+        <div class="item">
+            <div class="top">
+                <div class="pic"><img src="images/bbs_details_pic.png" alt=""/></div>
+                <div class="info">
+                    <p class="title">吃鸡秘笈</p>
+                    <p class="clearfix">
+                        <span class="time">6天前</span>
+                        <span class="praise">63</span>
+                        <span class="reply">回复</span>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="content">游戏画面不错游戏画面不错游戏画面不错游戏画面不错游戏画面不错，老手法，简单易上手</div>
+            </div>
+        </div>
+
+
+        <div class="item">
+            <div class="top">
+                <div class="pic"><img src="images/bbs_details_pic.png" alt=""/></div>
+                <div class="info">
+                    <p class="title">吃鸡秘笈</p>
+                    <p class="clearfix">
+                        <span class="time">6天前</span>
+                        <span class="praise">63</span>
+                        <span class="reply">回复</span>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="content">游戏画面不错游戏画面不错游戏画面不错游戏画面不错游戏画面不错，老手法，简单易上手</div>
+            </div>
+        </div>
+
+        <div class="no_more">
+            暂无更多
+        </div>
+    </div>
+</div>
+
+
+
+<div class="mask replyMask">
+    <div class="mask_bg"></div>
+    <div class="mask_content">
+        <div class="title">删除回复</div>
+        <div class="content">确定要删除此回复？</div>
+        <div class="footer ">
+            <div class="cancel">取消</div>
+            <div class="footer_delete">删除回复</div>
+        </div>
+    </div>
+</div>
+
+<div class="postDetails_bottom">
+    <div class="btn"><a href="replyPost.html">回复  楼主</a></div>
+    <div class="msg">
+        发送
+    </div>
+</div>
+</body>
+</html>
+
+
+<script>
+    $(function(){
+        $('.delete').on('click',function(){
+            $('.mask').fadeIn() ;
+        })
+        $('.footer_delete').on('click',function(){
+            $('.mask').fadeOut() ;
+        })
+        $('.cancel').on('click',function(){
+            $('.mask').fadeOut() ;
+        })
+    })
+</script>
