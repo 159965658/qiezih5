@@ -215,3 +215,11 @@ body{
     height: 0.7rem;
     margin: 0.1rem auto;
 }
+
+.follow_active{
+    background-color: #c8cee0 !important;
+}
+
+input:focus{
+    outline:none;
+}
