@@ -220,6 +220,6 @@ body{
     background-color: #c8cee0 !important;
 }
 
-input:focus{
+input:focus,textarea:focus{
     outline:none;
 }
