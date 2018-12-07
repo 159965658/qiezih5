@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title>2楼回帖</title>
@@ -11,189 +12,240 @@
     <script src="js/common.js"></script>
     <script src="js/swiper.min.js"></script>
 
-    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/posting.css">
     <script type="text/javascript" src="js/jquery.raty.min.js"></script>
-    <link rel="stylesheet" href="css/pullToRefresh.css"/>
+    <link rel="stylesheet" href="css/pullToRefresh.css" />
     <script src="js/iscroll.js"></script>
     <script src="js/pullToRefresh.js"></script>
     <script src="js/colorful.js"></script>
 </head>
+
 <body>
-<style>
-</style>
-<div class="content_top">
-    <div class="content">
-        <p>2楼回帖</p>
-        <div class="left">
-            <a href="javascript:history.go(-1)"><img src="images/back_icon.png"></a>
+    <style>
+        .pullUp {
+            margin-bottom: 5rem;
+        }
+
+        #wrapper .list {
+            overflow-y: scroll;
+            padding: 0.2rem !important;
+            margin-top: 0 !important;
+        }
+    </style>
+    <div class="content_top">
+        <div class="content">
+            <p>2楼回帖</p>
+            <div class="left">
+                <a href="javascript:history.go(-1)"><img src="images/back_icon.png"></a>
+            </div>
+            <div class="more_right">
+                <a>
+                    <img src="images/more_icon.png" alt="" />
+                </a>
+            </div>
         </div>
-        <div class="more_right">
-            <a>
-                <img src="images/more_icon.png" alt=""/>
-            </a>
-        </div>
     </div>
-</div>
 
 
-<div class="postDetails_reply replyList" id="wrapper">
-    <ul class="list">
+    <div class="postDetails_reply replyList" id="wrapper">
+        <ul class="list">
 
-        <div class="title">
-        <span>全部回复</span>
-        <span class="num">（323）</span>
-    </div>
-        <div class="operation">
-        <span class="positive_sequence">正序</span>
-        <span class="reverse_order">倒序</span>
-    </div>
-        <div class="list">
-        <div class="item">
-            <div class="top">
-                <div class="pic"><img src="images/bbs_details_pic.png" alt=""/></div>
-                <div class="info">
-                    <p class="title">吃鸡秘笈</p>
-                    <p class="clearfix">
-                        <span class="time">6天前</span>
-                        <span class="praise">63</span>
-                        <span class="reply">回复</span>
-                        <span class="delete">删除</span>
-                    </p>
+            <div class="title">
+                <span>全部回复</span>
+                <span class="num">（323）</span>
+            </div>
+            <div class="operation">
+                <span class="positive_sequence">正序</span>
+                <span class="reverse_order">倒序</span>
+            </div>
+            <div class="list2">
+                <div class="item">
+                    <div class="top">
+                        <div class="pic"><img src="images/bbs_details_pic.png" alt="" /></div>
+                        <div class="info">
+                            <p class="title">吃鸡秘笈</p>
+                            <p class="clearfix">
+                                <span class="time">6天前</span>
+                                <span class="praise">63</span>
+                                <span class="reply">回复</span>
+                                <span class="delete">删除</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="content">游戏画面不错游戏画面不错游戏画面不错游戏画面不错游戏画面不错，老手法，简单易上手</div>
+                    </div>
                 </div>
-            </div>
-            <div class="bottom">
-                <div class="content">游戏画面不错游戏画面不错游戏画面不错游戏画面不错游戏画面不错，老手法，简单易上手</div>
-            </div>
-        </div>
 
 
-        <div class="item">
-            <div class="top">
-                <div class="pic"><img src="images/bbs_details_pic.png" alt=""/></div>
-                <div class="info">
-                    <p class="title">吃鸡秘笈</p>
-                    <p class="clearfix">
-                        <span class="time">6天前</span>
-                        <span class="praise">63</span>
-                        <span class="reply">回复</span>
-                    </p>
+                <div class="item">
+                    <div class="top">
+                        <div class="pic"><img src="images/bbs_details_pic.png" alt="" /></div>
+                        <div class="info">
+                            <p class="title">吃鸡秘笈</p>
+                            <p class="clearfix">
+                                <span class="time">6天前</span>
+                                <span class="praise">63</span>
+                                <span class="reply">回复</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="content">游戏画面不错游戏画面不错游戏画面不错游戏画面不错游戏画面不错，老手法，简单易上手</div>
+                    </div>
                 </div>
-            </div>
-            <div class="bottom">
-                <div class="content">游戏画面不错游戏画面不错游戏画面不错游戏画面不错游戏画面不错，老手法，简单易上手</div>
-            </div>
-        </div>
 
 
-        <div class="item">
-            <div class="top">
-                <div class="pic"><img src="images/bbs_details_pic.png" alt=""/></div>
-                <div class="info">
-                    <p class="title">吃鸡秘笈</p>
-                    <p class="clearfix">
-                        <span class="time">6天前</span>
-                        <span class="praise">63</span>
-                        <span class="reply">回复</span>
-                    </p>
+                <div class="item">
+                    <div class="top">
+                        <div class="pic"><img src="images/bbs_details_pic.png" alt="" /></div>
+                        <div class="info">
+                            <p class="title">吃鸡秘笈</p>
+                            <p class="clearfix">
+                                <span class="time">6天前</span>
+                                <span class="praise">63</span>
+                                <span class="reply">回复</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="content">游戏画面不错游戏画面不错游戏画面不错游戏画面不错游戏画面不错，老手法，简单易上手</div>
+                    </div>
                 </div>
-            </div>
-            <div class="bottom">
-                <div class="content">游戏画面不错游戏画面不错游戏画面不错游戏画面不错游戏画面不错，老手法，简单易上手</div>
-            </div>
-        </div>
 
 
-        <div class="item">
-            <div class="top">
-                <div class="pic"><img src="images/bbs_details_pic.png" alt=""/></div>
-                <div class="info">
-                    <p class="title">吃鸡秘笈</p>
-                    <p class="clearfix">
-                        <span class="time">6天前</span>
-                        <span class="praise">63</span>
-                        <span class="reply">回复</span>
-                    </p>
+                <div class="item">
+                    <div class="top">
+                        <div class="pic"><img src="images/bbs_details_pic.png" alt="" /></div>
+                        <div class="info">
+                            <p class="title">吃鸡秘笈</p>
+                            <p class="clearfix">
+                                <span class="time">6天前</span>
+                                <span class="praise">63</span>
+                                <span class="reply">回复</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="content">游戏画面不错游戏画面不错游戏画面不错游戏画面不错游戏画面不错，老手法，简单易上手</div>
+                    </div>
                 </div>
-            </div>
-            <div class="bottom">
-                <div class="content">游戏画面不错游戏画面不错游戏画面不错游戏画面不错游戏画面不错，老手法，简单易上手</div>
-            </div>
-        </div>
 
-        <div class="no_more">
-            暂无更多
+            </div>
+        </ul>
+    </div>
+
+
+
+    <div class="mask replyMask">
+        <div class="mask_bg"></div>
+        <div class="mask_content">
+            <div class="title">删除回复</div>
+            <div class="content">确定要删除此回复？</div>
+            <div class="footer ">
+                <div class="cancel">取消</div>
+                <div class="footer_delete">删除回复</div>
+            </div>
         </div>
     </div>
-    </ul>
-</div>
 
-
-
-<div class="mask replyMask">
-    <div class="mask_bg"></div>
-    <div class="mask_content">
-        <div class="title">删除回复</div>
-        <div class="content">确定要删除此回复？</div>
-        <div class="footer ">
-            <div class="cancel">取消</div>
-            <div class="footer_delete">删除回复</div>
+    <div class="postDetails_bottom">
+        <div class="btn"><a href="replyPost.html">回复 楼主</a></div>
+        <div class="msg">
+            发送
         </div>
     </div>
-</div>
-
-<div class="postDetails_bottom">
-    <div class="btn"><a href="replyPost.html">回复  楼主</a></div>
-    <div class="msg">
-        发送
-    </div>
-</div>
 </body>
+
 </html>
 
 
 <script>
-    $(function(){
-        $('.delete').on('click',function(){
-            $('.mask').fadeIn() ;
+    $(function () {
+        $('.delete').on('click', function () {
+            $('.mask').fadeIn();
         })
-        $('.footer_delete').on('click',function(){
-            $('.mask').fadeOut() ;
+        $('.footer_delete').on('click', function () {
+            $('.mask').fadeOut();
         })
-        $('.cancel').on('click',function(){
-            $('.mask').fadeOut() ;
+        $('.cancel').on('click', function () {
+            $('.mask').fadeOut();
+        });
+        //初始化正排序
+        $('.operation .positive_sequence').addClass('active');
+        $('.operation .positive_sequence').on('click', function () {
+            var th = $(this), isHover = th.hasClass('active'), next = $('.operation .reverse_order');
+            //清除
+            next.removeClass('active');
+            if (!isHover) {
+                th.addClass('active');
+                th.css('background-image', 'url("images/top_icon.png")');
+                next.css('background-image', 'url("images/order_icon.png")');
+            } else {
+                th.removeClass('active');
+                th.css('background-image', 'url("images/order_icon.png")');
+            }
+        });
+        //初始化倒序
+        $('.operation .reverse_order').on('click', function () {
+            var th = $(this), isHover = th.hasClass('active'), next = $('.operation .positive_sequence');
+            //清除
+            next.removeClass('active');
+            if (!isHover) {
+                th.addClass('active');
+                th.css('background-image', 'url("images/bottom_icon.png")');
+                next.css('background-image', 'url("images/order_icon.png")');
+            } else {
+                th.removeClass('active');
+                th.css('background-image', 'url("images/order_icon.png")');
+            }
+        });
+
+        $(document).on('click', '.list2 .praise', function () {
+            var isHover = $(this).hasClass('praiseHover');
+            // $('.postDetails_operation .shits').removeClass('shitsHover')
+            if (!isHover) {//点赞
+                $(this).addClass('praiseHover')
+                $(this).css('background-image', 'url("images/praise_icon0.png") ')
+                // $('.postDetails_operation .shits img').attr('src', 'images/shits_icon1.png')
+            } else { //取消点赞
+                $(this).removeClass('praiseHover')
+                $(this).css('background-image', 'url("images/praise_icon.png") ')
+            }
         })
+
     })
 </script>
 
 <script>
-	refresher.info ={
-		"pullDownLable": "Pull down to refresh...",
-		"pullingDownLable": "Release to refresh...",
-		"pullUpLable": "Pull up to load more...",
-		"pullingUpLable": "Release to load more...",
-		"loadingLable": "Loading..."
-	}
-	refresher.init({
-		id:"wrapper",
-		pullDownAction:Refresh,
-		pullUpAction:Load
-	});
-	function Refresh() {
-		setTimeout(function () {
+    refresher.info = {
+        "pullDownLable": "Pull down to refresh...",
+        "pullingDownLable": "Release to refresh...",
+        "pullUpLable": "Pull up to load more...",
+        "pullingUpLable": "Release to load more...",
+        "loadingLable": "Loading..."
+    }
+    refresher.init({
+        id: "wrapper",
+        pullDownAction: Refresh,
+        pullUpAction: Load
+    });
+    function Refresh() {
+        setTimeout(function () {
 
-			wrapper.refresh()
-			console.log(111)
-		}, 1000);
+            wrapper.refresh()
+            console.log(111)
+        }, 1000);
 
-	}
+    }
 
-	function Load() {
-		setTimeout(function () {
+    function Load() {
+        setTimeout(function () {
 
-			wrapper.refresh()
-			console.log(111)
-		}, 1000);
-	}
+            wrapper.refresh()
+            console.log(111)
+        }, 1000);
+    }
 </script>

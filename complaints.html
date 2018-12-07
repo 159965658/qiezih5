@@ -82,7 +82,7 @@
 
 <script>
     $(function () {
-        $('.complaints_select ul li').on('click', function () {
+        $(document).on('click', '.complaints_select ul li', function () {
             $('.complaints_select .select_btn').removeClass('select_btn_active');
             $(this).find('.select_btn').addClass('select_btn_active');
             console.log($(this).find('.select_content').html())
@@ -94,7 +94,7 @@
             word = wordCount.find(".word");
         //调用
         statInputNum(textArea, word);
-        $('.supplement_bottom_btn').on('click', function () {
+        $(document).on('click', '.supplement_bottom_btn', function () {
             var text = textArea.val(), active = $('.select_btn_active').prev().html();
             console.log(`内容：${text},投诉说明：${active}`);
         });

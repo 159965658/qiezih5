@@ -274,14 +274,14 @@
         }, 1000); //假设ajax 请求时间为 1秒
     }
     $(function () {
-        $('.bbs_tab_left p').on('click', function () {
+        $(document).on('click', '.bbs_tab_left p', function () {
             var th = $(this), key = th.attr('data-id');
             $('.bbs_tab_left p').removeClass('active');
             th.addClass('active');
             bbsAjax(key);
         })
         //关注取消关注
-        $('#info_btn_follow').on('click', function () {
+        $(document).on('click', '#info_btn_follow', function () {
             var th = $(this);
             var is = th.hasClass('follow_active');
             if (!is) {

@@ -172,7 +172,7 @@
     $(function () {
 
         //评论点赞差评操作
-        $('.operation .praise').on('click', function () {
+        $(document).on('click', '.operation .praise', function () {
             var isHover = $(this).hasClass('praiseHover');
             $(this).next().removeClass('shitsHover')
             if (!isHover) {//点赞
@@ -184,7 +184,7 @@
                 $(this).css('background-image', 'url("images/praise_icon.png")')
             }
         })
-        $('.operation .shits').on('click', function () {
+        $(document).on('click','.operation .shits', function () {
             var isHover = $(this).hasClass('shitsHover');
 
             $(this).prev().removeClass('praiseHover')
@@ -200,7 +200,7 @@
 
         //帖子点赞差评操作
 
-        $('.postDetails_operation .praise').on('click', function () {
+        $(document).on('click','.postDetails_operation .praise', function () {
             var isHover = $(this).hasClass('praiseHover');
             $('.postDetails_operation .shits').removeClass('shitsHover')
             if (!isHover) {//点赞
@@ -213,7 +213,7 @@
             }
         })
 
-        $('.postDetails_operation .shits').on('click', function () {
+        $(document).on('click', '.postDetails_operation .shits',function () {
             var isHover = $(this).hasClass('shitsHover');
             $('.postDetails_operation .praise').removeClass('praiseHover')
             if (!isHover) {//点赞
@@ -233,7 +233,7 @@
             $('.mask').fadeOut();
         })
 
-        $('.postDetails_operation .collection').on('click', function () {
+        $(document).on('click', '.postDetails_operation .collection',function () {
             var isHover = $(this).hasClass('collectionHover')
             if (!isHover) {
                 $(this).addClass('collectionHover')
@@ -245,7 +245,7 @@
         })
         //点击分享
 
-        $('.postDetails_operation .share').on('click', function () {
+        $(document).on('click','.postDetails_operation .share', function () {
             alert('点击了分享');
 
         })
@@ -259,7 +259,7 @@
         });
     })
     //只看楼主
-    $('.operation .building').on('click', function () {
+    $(document).on('click','.operation .building', function () {
         var isHover = $(this).hasClass('active');
         if (!isHover) {
             $(this).addClass('active');

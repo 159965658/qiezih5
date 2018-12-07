@@ -130,7 +130,7 @@
 </body>
 
 <script>
-    $('#collect .right .btn').on('click', function () {
+    $(document).on('click','#collect .right .btn', function () {
         var th = $(this); 
         var is = th.hasClass('active');
         if (!is) {
