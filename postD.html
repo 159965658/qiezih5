@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title>帖子详情</title>
@@ -11,139 +12,161 @@
     <script src="js/common.js"></script>
     <script src="js/swiper.min.js"></script>
 
-    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/posting.css">
     <script type="text/javascript" src="js/jquery.raty.min.js"></script>
+    <link rel="stylesheet" href="css/pullToRefresh.css" />
+    <script src="js/iscroll.js"></script>
+    <script src="js/pullToRefresh.js"></script>
+    <script src="js/colorful.js"></script>
 </head>
+
 <body>
-<style>
-</style>
-<div class="content_top">
-    <div class="content">
-        <p>帖子详情</p>
-        <div class="left">
-            <a href="javascript:history.go(-1)"><img src="images/back_icon.png"></a>
-        </div>
-        <div class="more_right">
-            <a>
-                <img src="images/more_icon.png" alt=""/>
-            </a>
-        </div>
-    </div>
-</div>
-<div class="postDetails">
-    <div class="postDetails_title">
-        2018LCK冬季赛第一周 TOP5
-    </div>
-    <div class="postDetails_info">
-        <div class="postDetails_info_pic">
-            <img src="images/bbs_details_pic.png" alt=""/>
-        </div>
-        <div class="postDetails_info_right">
-            <div class="name">吃鸡秘笈</div>
-            <div class="name1">流星蝴蝶剑  |  一小时前</div>
-            <div class="view">5518</div>
+    <style>
+    </style>
+    <div class="content_top">
+        <div class="content">
+            <p>帖子详情</p>
+            <div class="left">
+                <a href="javascript:history.go(-1)"><img src="images/back_icon.png"></a>
+            </div>
+            <div class="more_right">
+                <a>
+                    <img src="images/more_icon.png" alt="" />
+                </a>
+            </div>
         </div>
     </div>
+    <div id="wrapper">
+        <ul>
 
-    <div class="postDetails_content">
-        <p><span>讲述四大杀手之一的孟星魂，以结束杀手生涯为条件接受刺伯之命，卷入了一个个背叛阴谋之中，却爱上了老伯之女孙蝶，并在兄弟、朋友的帮助下，凭借高超的武功和过人的智慧，揭穿并粉碎种种阴谋</span></p>
-        <p><img src="images/video_pic.png" alt=""/></p>
-    </div>
-</div>
-
-<div class="postDetails_operation">
-    <div class="praise"><img src="images/praise_icon1.png" alt=""/></div>
-    <div class="shits"><img src="images/shits_icon1.png" alt=""/></div>
-    <div class="collection"><img src="images/collection_icon.png" alt=""/></div>
-    <div class="share"><img src="images/share_icon.png" alt=""/></div>
-</div>
-<div class="postDetails_item">
-    <div class="postDetails_item_pic"><img src="images/hotBBS_pic.png" alt=""/></div>
-    <div class="postDetails_item_right">
-        <p class="p1"><span>吃鸡秘笈</span></p>
-        <p class="p2">厂商：鬼事管理员</p>
-    </div>
-    <div class="score">9.8</div>
-</div>
-
-<div class="postDetails_reply">
-    <div class="title">
-        <span>全部回复</span>
-        <span class="num">（323）</span>
-    </div>
-    <div class="operation">
-        <span class="positive_sequence">正序</span>
-        <span class="reverse_order">倒序</span>
-        <span class="building">只看楼主</span>
-    </div>
-    <div class="list">
-        <div class="item">
-            <div class="top">
-                <div class="pic"><img src="images/bbs_details_pic.png" alt=""/></div>
-                <div class="info">
-                    <p class="title">吃鸡秘笈</p>
-                    <p class="floor">二楼</p>
+            <div class="postDetails">
+                <div class="postDetails_title">
+                    2018LCK冬季赛第一周 TOP5
                 </div>
-                <div class="btn">
-                    <span class="complaints">投诉</span>
-                    <span class="timed">一小时前</span>
+                <div class="postDetails_info">
+                    <div class="postDetails_info_pic">
+                        <img src="images/bbs_details_pic.png" alt="" />
+                    </div>
+                    <div class="postDetails_info_right">
+                        <div class="name">吃鸡秘笈</div>
+                        <div class="name1">流星蝴蝶剑 | 一小时前</div>
+                        <div class="view">5518</div>
+                    </div>
+                </div>
+
+                <div class="postDetails_content">
+                    <p><span>讲述四大杀手之一的孟星魂，以结束杀手生涯为条件接受刺伯之命，卷入了一个个背叛阴谋之中，却爱上了老伯之女孙蝶，并在兄弟、朋友的帮助下，凭借高超的武功和过人的智慧，揭穿并粉碎种种阴谋</span></p>
+                    <div class="list">
+                        <p><img src="images/video_pic.png" alt="" /></p>
+                    </div>
+                    <div class="list">
+                        <p><img src="images/video_pic.png" alt="" /></p>
+                        <p><img src="images/video_pic.png" alt="" /></p>
+                    </div>
+                    <div class="list">
+                        <p><img src="images/video_pic.png" alt="" /></p>
+                        <p><img src="images/video_pic.png" alt="" /></p>
+                        <p><img src="images/video_pic.png" alt="" /></p>
+                    </div>
                 </div>
             </div>
-            <div class="bottom">
-                <div class="content">游戏画面不错游戏画面不错游戏画面不错游戏画面不错游戏画面不错，老手法，简单易上手</div>
+            <div class="postDetails_operation">
+                <div class="view">3000</div>
+                <div class="praise"><img src="images/praise_icon1.png" alt="" /></div>
+                <div class="shits"><img src="images/shits_icon1.png" alt="" /></div>
+                <div class="collection"><img src="images/collection_icon.png" alt="" /></div>
+                <div class="share"><img src="images/share_icon.png" alt="" /></div>
+            </div>
+            <div class="postDetails_item">
+                <div class="postDetails_item_pic"><img src="images/hotBBS_pic.png" alt="" /></div>
+                <div class="postDetails_item_right">
+                    <p class="p1"><span>吃鸡秘笈</span></p>
+                    <p class="p2">厂商：鬼事管理员</p>
+                </div>
+                <div class="score">9.8</div>
+            </div>
+
+            <div class="postDetails_reply">
+                <div class="title">
+                    <span>全部回复</span>
+                    <span class="num">（323）</span>
+                </div>
                 <div class="operation">
-                    <span class="message">55.8万</span>
-                    <span class="praise">63</span>
-                    <span class="shits">40</span>
+                    <span class="positive_sequence">正序</span>
+                    <span class="reverse_order">倒序</span>
+                    <span class="building">只看楼主</span>
                 </div>
-            </div>
-        </div>
+                <div class="list">
+                    <div class="item">
+                        <div class="top">
+                            <div class="pic"><img src="images/bbs_details_pic.png" alt="" /></div>
+                            <div class="info">
+                                <p class="title">吃鸡秘笈</p>
+                                <p class="floor">二楼</p>
+                            </div>
+                            <div class="btn">
+                                <span class="complaints">投诉</span>
+                                <span class="timed">一小时前</span>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="content">游戏画面不错游戏画面不错游戏画面不错游戏画面不错游戏画面不错，老手法，简单易上手</div>
+                            <div class="operation">
+                                <span class="message">55.8万</span>
+                                <span class="praise">63</span>
+                                <span class="shits">40</span>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="item">
-            <div class="top">
-                <div class="pic"><img src="images/bbs_details_pic.png" alt=""/></div>
-                <div class="info">
-                    <p class="title">吃鸡秘笈</p>
-                    <p class="floor">二楼</p>
-                </div>
-                <div class="btn">
-                    <span class="complaints">投诉</span>
-                    <span class="timed">一小时前</span>
+                    <div class="item">
+                        <div class="top">
+                            <div class="pic"><img src="images/bbs_details_pic.png" alt="" /></div>
+                            <div class="info">
+                                <p class="title">吃鸡秘笈</p>
+                                <p class="floor">二楼</p>
+                            </div>
+                            <div class="btn">
+                                <span class="complaints">投诉</span>
+                                <span class="timed">一小时前</span>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="content">游戏画面不错游戏画面不错游戏画面不错游戏画面不错游戏画面不错，老手法，简单易上手</div>
+                            <div class="operation">
+                                <span class="message">55.8万</span>
+                                <span class="praise">63</span>
+                                <span class="shits">40</span>
+                            </div>
+                        </div>
+                        <div class="leave_message">
+                            <p>
+                                <span class="id">最强的小8:</span><span>难得出去一趟</span>
+                            </p>
+                            <p>
+                                <span class="id">程儿</span><span>回复</span><span class="id">最强的小8:</span><span>难得出去一趟难得出去一趟难得出去一趟难得出去一趟难得出去一趟难得出去一趟</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="no_more">
+                        暂无更多
+                    </div>
                 </div>
             </div>
-            <div class="bottom">
-                <div class="content">游戏画面不错游戏画面不错游戏画面不错游戏画面不错游戏画面不错，老手法，简单易上手</div>
-                <div class="operation">
-                    <span class="message">55.8万</span>
-                    <span class="praise">63</span>
-                    <span class="shits">40</span>
-                </div>
-            </div>
-            <div class="leave_message">
-                <p>
-                    <span class="id">最强的小8:</span><span>难得出去一趟</span>
-                </p>
-                <p>
-                    <span class="id">程儿</span><span>回复</span><span class="id">最强的小8:</span><span>难得出去一趟难得出去一趟难得出去一趟难得出去一趟难得出去一趟难得出去一趟</span>
-                </p>
-            </div>
-        </div>
-        <div class="no_more">
-            暂无更多
+        </ul>
+    </div>
+
+    <div class="postDetails_bottom">
+        <div class="btn"><a href="replyPost.html">回复 楼主</a></div>
+        <div class="msg">
+            <span>10</span>
+            <img src="images/message_icon.png" alt="" />
         </div>
     </div>
-</div>
-
-<div class="postDetails_bottom">
-    <div class="btn"><a href="replyPost.html">回复  楼主</a></div>
-    <div class="msg">
-        <span>10</span>
-        <img src="images/message_icon.png" alt=""/>
-    </div>
-</div>
 </body>
+
 </html>
 
 
@@ -152,22 +175,116 @@
         slidesPerView: 'auto',
         paginationClickable: true,
         spaceBetween: 10,
-        loop:true,
+        loop: true,
     });
-    $(function(){
-        $('.more_right').on('click',function(){
-            $('.mask').fadeIn() ;
+    $(function () {
+
+        //评论点赞差评操作
+        $('.operation .praise').on('click', function () {
+            var isHover = $(this).hasClass('praiseHover');
+            if (!isHover) {//点赞
+                $(this).addClass('praiseHover')
+                $(this).css('background-image', 'url("images/praise_icon0.png")')
+                $(this).next().css('background-image', 'url("images/shits_icon.png")')
+            } else { //取消点赞
+                $(this).removeClass('praiseHover')
+                $(this).css('background-image', 'url("images/praise_icon.png")')
+            }
+        })
+        $('.operation .shits').on('click', function () {
+
+            var isHover = $(this).hasClass('shitsHover');
+            if (!isHover) {//点赞
+                $(this).addClass('shitsHover')
+                $(this).css('background-image', 'url("images/shits_icon0.png")')
+                $(this).prev().css('background-image', 'url("images/praise_icon.png")')
+            } else { //取消点赞
+                $(this).removeClass('shitsHover')
+                $(this).css('background-image', 'url("images/shits_icon.png")')
+            }
+        })
+
+        //帖子点赞差评操作
+
+        $('.postDetails_operation .praise').on('click', function () {
+            var isHover = $(this).hasClass('praiseHover');
+            if (!isHover) {//点赞
+                $(this).addClass('praiseHover')
+                $(this).find('img').attr('src', 'images/praise_icon2.png')
+                $('.postDetails_operation .shits img').attr('src', 'images/shits_icon1.png')
+            } else { //取消点赞
+                $(this).removeClass('praiseHover')
+                $(this).find('img').attr('src', 'images/praise_icon1.png')
+            }
+        })
+
+        $('.postDetails_operation .shits').on('click', function () {
+            var isHover = $(this).hasClass('shitsHover');
+            if (!isHover) {//点赞
+                $(this).addClass('shitsHover')
+                $(this).find('img').attr('src', 'images/shits_icon2.png')
+                $('.postDetails_operation .praise img').attr('src', 'images/praise_icon1.png')
+            } else { //取消点赞
+                $(this).removeClass('shitsHover')
+                $(this).find('img').attr('src', 'images/shits_icon1.png')
+            }
+        })
+        $('.more_right').on('click', function () {
+            $('.mask').fadeIn();
         });
-        $('.mask_bg').on('click',function(){
-            $('.mask').fadeOut() ;
+        $('.mask_bg').on('click', function () {
+            $('.mask').fadeOut();
+        })
+
+        $('.postDetails_operation .collection').on('click', function () {
+            var isHover = $(this).hasClass('collectionHover')
+            if (!isHover) {
+                $(this).addClass('collectionHover')
+                $(this).find('img').attr('src', 'images/star-on.png'); //收藏
+            } else {
+                $(this).removeClass('collectionHover')
+                $(this).find('img').attr('src', 'images/collection_icon.png');//取消收藏
+            }
         })
         $('#star').raty({
             //点击星数回调
-            click: function(score, evt) {
-
-//                alert('ID: ' + $(this).attr('id') + "\nscore: " + score + "\nevent: " + evt);
+            click: function (score, evt) {
+                console.log('点击星数');
+                //                alert('ID: ' + $(this).attr('id') + "\nscore: " + score + "\nevent: " + evt);
 
             }
         });
     })
+</script>
+
+
+<script>
+    refresher.info = {
+        "pullDownLable": "Pull down to refresh...",
+        "pullingDownLable": "Release to refresh...",
+        "pullUpLable": "Pull up to load more...",
+        "pullingUpLable": "Release to load more...",
+        "loadingLable": "Loading..."
+    }
+    refresher.init({
+        id: "wrapper",
+        pullDownAction: Refresh,
+        pullUpAction: Load
+    });
+    function Refresh() {
+        setTimeout(function () {
+
+            wrapper.refresh()
+            console.log(111)
+        }, 1000);
+
+    }
+
+    function Load() {
+        setTimeout(function () {
+
+            wrapper.refresh()
+            console.log(111)
+        }, 1000);
+    }
 </script>

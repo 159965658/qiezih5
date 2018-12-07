@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/posting.css">
     <script type="text/javascript" src="js/jquery.raty.min.js"></script>
+    <link rel="stylesheet" href="css/pullToRefresh.css"/>
+    <script src="js/iscroll.js"></script>
+    <script src="js/pullToRefresh.js"></script>
+    <script src="js/colorful.js"></script>
 </head>
 <body>
 <style>
@@ -34,16 +38,18 @@
 </div>
 
 
-<div class="postDetails_reply replyList">
-    <div class="title">
+<div class="postDetails_reply replyList" id="wrapper">
+    <ul class="list">
+
+        <div class="title">
         <span>全部回复</span>
         <span class="num">（323）</span>
     </div>
-    <div class="operation">
+        <div class="operation">
         <span class="positive_sequence">正序</span>
         <span class="reverse_order">倒序</span>
     </div>
-    <div class="list">
+        <div class="list">
         <div class="item">
             <div class="top">
                 <div class="pic"><img src="images/bbs_details_pic.png" alt=""/></div>
@@ -120,6 +126,7 @@
             暂无更多
         </div>
     </div>
+    </ul>
 </div>
 
 
@@ -158,4 +165,35 @@
             $('.mask').fadeOut() ;
         })
     })
+</script>
+
+<script>
+	refresher.info ={
+		"pullDownLable": "Pull down to refresh...",
+		"pullingDownLable": "Release to refresh...",
+		"pullUpLable": "Pull up to load more...",
+		"pullingUpLable": "Release to load more...",
+		"loadingLable": "Loading..."
+	}
+	refresher.init({
+		id:"wrapper",
+		pullDownAction:Refresh,
+		pullUpAction:Load
+	});
+	function Refresh() {
+		setTimeout(function () {
+
+			wrapper.refresh()
+			console.log(111)
+		}, 1000);
+
+	}
+
+	function Load() {
+		setTimeout(function () {
+
+			wrapper.refresh()
+			console.log(111)
+		}, 1000);
+	}
 </script>

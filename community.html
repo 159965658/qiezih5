@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="css/common.css"/>
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/community.css"/>
+    <link rel="stylesheet" href="css/pullToRefresh.css"/>
+    <script src="js/iscroll.js"></script>
+    <script src="js/pullToRefresh.js"></script>
+    <script src="js/colorful.js"></script>
 
 </head>
 <body>
@@ -26,541 +30,422 @@
         </div>
     </div>
 </div>
-<div class="product">
-    <div class="top-tab clearfix">
-        <div class="recommend-btn">
-            <span class="active">推荐</span>
-        </div>
-        <div class="focus-btn">
-            <span>关注</span>
-        </div>
+
+<div class="top-tab clearfix">
+    <div class="recommend-btn">
+        <a ><span class="active">推荐</span></a>
     </div>
-    <div class="product-bottom">
-
-        <div class="recommend-list">
-            <div>
-                <!--热门帖子-->
-                <div class="item ">
-                    <div class="title clearfix">
-                        <span>热门帖子</span>
-                        <a href="#">查看更多</a>
-                    </div>
-                    <div class="item_content">
-                        <div class="swiper-container swiper-container-recommend">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--热门活动-->
-                <div class="item ">
-                    <div class="title">
-                        <span>热门活动</span>
-                        <a href="#">查看更多</a>
-                    </div>
-                    <div class="item_content">
-                        <div class="swiper-container swiper-container-activity">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--热门论坛-->
-                <div class="forum-list">
-                    <div class="title">
-                        <span>热门论坛</span>
-                        <a href="#">查看更多</a>
-                    </div>
-                    <div class="list">
-                        <div class="item">
-                            <a href="#"><img src="images/focusList_pic.png" alt=""/></a>
-                        </div>
-
-                        <div class="item">
-                            <a href="#"><img src="images/focusList_pic.png" alt=""/></a>
-                        </div>
-
-                        <div class="item">
-                            <a href="#"><img src="images/focusList_pic.png" alt=""/></a>
-                        </div>
-
-                        <div class="item">
-                            <a href="#"><img src="images/focusList_pic.png" alt=""/></a>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <div>
-                <!--推荐-->
-                <div class="item">
-                    <div class="title title_t clearfix">
-                        <span>推荐</span>
-                        <a href="#">查看更多</a>
-                    </div>
-                    <div class="list-recommend">
-                        <div class="item">
-                            <a href="#" class="left">
-                                <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
-                                <div class="bottom">
-                                    <span class="user">Riot</span>
-                                    <span class="message">33.2</span>
-                                    <span class="view">5518</span>
-                                </div>
-                            </a>
-                            <a href="#" class="right">
-                                <img src="images/recommend_pic.png" alt=""/>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#" class="left">
-                                <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
-                                <div class="bottom">
-                                    <span class="user">Riot</span>
-                                    <span class="message">33.2</span>
-                                    <span class="view">5518</span>
-                                </div>
-                            </a>
-                            <a href="#" class="right">
-                                <img src="images/recommend_pic.png" alt=""/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <!--精选-->
-                <div class="item ">
-                    <div class="title title_t">
-                        <span>精选</span>
-                        <a href="#">查看更多</a>
-                    </div>
-                    <div class="list-recommend">
-                        <div class="item">
-                            <a href="#" class="left">
-                                <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
-                                <div class="bottom">
-                                    <span class="user">Riot</span>
-                                    <span class="message">33.2</span>
-                                    <span class="view">5518</span>
-                                </div>
-                            </a>
-                            <a href="#" class="right">
-                                <img src="images/recommend_pic.png" alt=""/>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#" class="left">
-                                <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
-                                <div class="bottom">
-                                    <span class="user">Riot</span>
-                                    <span class="message">33.2</span>
-                                    <span class="view">5518</span>
-                                </div>
-                            </a>
-                            <a href="#" class="right">
-                                <img src="images/recommend_pic.png" alt=""/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="item video_item">
-                    <div class="title title_t">
-                        <span>游戏视频</span>
-                        <a href="#">查看更多</a>
-                    </div>
-                    <div class="l_title">
-                        2018LCK冬季赛第一周 TOP5
-                    </div>
-                    <div class="list-video">
-                        <div class="item">
-                            <a href="#" >
-
-                                <div class="top">
-                     <!--               <img class="master" src="images/video_pic.png" alt=""/>
-                                    <img class="btn" src="images/video_icon.png" alt=""/>
-                                    <span class="time">
-                                        00:45
-                                    </span>-->
-
-                                    <iframe id="player" width="100%"
-                                            src="http://www.youtube.com/embed/ziGD7vQOwl8?autoplay=1&controls=1&fs=1"
-                                            frameborder="0"/></iframe>
-
-
-                                </div>
-                                <div class="bottom">
-                                    <p>《流星蝴蝶剑》大锤教学，仅此一份独家秘笈仅此一份独家秘笈仅此一份独家秘笈仅此一份独家秘笈仅此一份独家秘笈仅此一份独家秘笈</p>
-
-                                    <span class="message">33.2</span>
-                                    <span class="view">5518</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#" >
-                                <div class="top">
-                                  <!--  <img class="master" src="images/video_pic.png" alt=""/>
-                                    <img class="btn" src="images/video_icon.png" alt=""/>
-                                    <span class="time">
-                                        00:45
-                                    </span>-->
-                                    <iframe width="100%"
-                                            fs="0"
-                                            src="http://www.youtube.com/embed/ziGD7vQOwl8?autoplay=1&controls=1&fs=1"
-                                            frameborder="0"/></iframe>
-
-                                </div>
-                                <div class="bottom">
-                                    <p>《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</p>
-                                    <span class="view">5518</span>
-                                    <span class="message">33.2</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#" >
-                                <div class="top">
-                            <!--        <img class="master" src="images/video_pic.png" alt=""/>
-                                    <img class="btn" src="images/video_icon.png" alt=""/>
-                                    <span class="time">
-                                        00:45
-                                    </span>-->
-                                    <iframe width="100%"
-                                            src="http://www.youtube.com/embed/ziGD7vQOwl8?autoplay=1&controls=1&fs=1"
-                                            frameborder="0"/></iframe>
-                                </div>
-                                <div class="bottom">
-                                    <p>《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</p>
-                                    <span class="view">5518</span>
-                                    <span class="message">33.2</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="item">
-                            <a href="#" >
-                                <div class="top">
-                      <!--              <img class="master" src="images/video_pic.png" alt=""/>
-                                    <img class="btn" src="images/video_icon.png" alt=""/>
-                                    <span class="time">
-                                        00:45
-                                    </span>-->
-
-                                    <iframe width="100%"
-                                            src="http://www.youtube.com/embed/ziGD7vQOwl8?autoplay=1&controls=1&fs=1"
-                                            frameborder="0"/></iframe>
-                                </div>
-                                <div class="bottom">
-                                    <p>《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</p>
-                                    <span class="view">5518</span>
-                                    <span class="message">33.2</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="item">
-                            <a href="#" >
-                                <div class="top">
-                            <!--        <img class="master" src="images/video_pic.png" alt=""/>
-                                    <img class="btn" src="images/video_icon.png" alt=""/>
-                                    <span class="time">
-                                        00:45
-                                    </span>-->
-
-                                    <iframe width="100%"
-                                            src="http://www.youtube.com/embed/ziGD7vQOwl8?autoplay=1&controls=1&fs=1"
-                                            frameborder="0"/></iframe>
-                                </div>
-                                <div class="bottom">
-                                    <p>《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</p>
-                                    <span class="view">5518</span>
-                                    <span class="message">33.2</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="item ">
-                    <div class="title title_t">
-                        <span>推荐</span>
-                        <a href="#">查看更多</a>
-                    </div>
-                    <p>2018LCK冬季赛第一周 TOP5</p>
-                    <div class="list-recommend">
-                        <div class="item">
-                            <a href="#"> <img src="images/video_pic1.png" alt=""/>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#" class="left">
-                                <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
-                                <div class="bottom">
-                                    <span class="user">Riot</span>
-                                    <span class="message">33.2</span>
-                                    <span class="view">5518</span>
-                                </div>
-                            </a>
-                            <a href="#" class="right">
-                                <img src="images/video_pic1.png" alt=""/>
-                            </a>
-                        </div>
-
-                        <div class="item">
-                            <a href="#" class="left">
-                                <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
-                                <div class="bottom">
-                                    <span class="user">Riot</span>
-                                    <span class="message">33.2</span>
-                                    <span class="view">5518</span>
-                                </div>
-                            </a>
-                            <a href="#" class="right">
-                                <img src="images/video_pic1.png" alt=""/>
-                            </a>
-                        </div>
-
-                        <div class="item">
-                            <a href="#" class="left">
-                                <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
-                                <div class="bottom">
-                                    <span class="user">Riot</span>
-                                    <span class="message">33.2</span>
-                                    <span class="view">5518</span>
-                                </div>
-                            </a>
-                            <a href="#" class="right">
-                                <img src="images/video_pic1.png" alt=""/>
-                            </a>
-                        </div>
-
-                        <div class="item">
-                            <a href="#" class="left">
-                                <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
-                                <div class="bottom">
-                                    <span class="user">Riot</span>
-                                    <span class="message">33.2</span>
-                                    <span class="view">5518</span>
-                                </div>
-                            </a>
-                            <a href="#" class="right">
-                                <img src="images/video_pic1.png" alt=""/>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <p class="">2018LCK冬季赛第一周 TOP5</p>
-                    <div class="list-recommend">
-                        <div class="item">
-                            <a href="#" >
-                                <img src="images/video_pic2.png" alt=""/>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#" class="left">
-                                <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
-                                <div class="bottom">
-                                    <span class="user">Riot</span>
-                                    <span class="message">33.2</span>
-                                    <span class="view">5518</span>
-                                </div>
-                            </a>
-                            <a href="#" class="right">
-                                <img src="images/video_pic2.png" alt=""/>
-                            </a>
-                        </div>
-
-                        <div class="item">
-                            <a href="#" class="left">
-                                <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
-                                <div class="bottom">
-                                    <span class="user">Riot</span>
-                                    <span class="message">33.2</span>
-                                    <span class="view">5518</span>
-                                </div>
-                            </a>
-                            <a href="#" class="right">
-                                <img src="images/video_pic2.png" alt=""/>
-                            </a>
-                        </div>
-
-                        <div class="item">
-                            <a href="#" class="left">
-                                <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
-                                <div class="bottom">
-                                    <span class="user">Riot</span>
-                                    <span class="message">33.2</span>
-                                    <span class="view">5518</span>
-                                </div>
-                            </a>
-                            <a href="#" class="right">
-                                <img src="images/video_pic2.png" alt=""/>
-                            </a>
-                        </div>
-
-                        <div class="item">
-                            <a href="#" class="left">
-                                <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
-                                <div class="bottom">
-                                    <span class="user">Riot</span>
-                                    <span class="message">33.2</span>
-                                    <span class="view">5518</span>
-                                </div>
-                            </a>
-                            <a href="#" class="right">
-                                <img src="images/video_pic2.png" alt=""/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="focus-list">
-            <div>
-                <div class="item">
-                    <div class="title ">
-                        <span>我关注的论坛</span>
-                        <a href="#">查看更多</a>
-                    </div>
-                    <div class="focus-lt">
-                        <div class="item">
-                            <div class="left">
-                                <img src="images/tuijian_pic.png" alt=""/>
-                            </div>
-                            <div class="right">
-                                <div class="title">流星蝴蝶剑</div>
-                                <div class="introduction">帖子 5788</div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="left">
-                                <img src="images/tuijian_pic.png" alt=""/>
-                            </div>
-                            <div class="right">
-                                <div class="title">流星蝴蝶剑</div>
-                                <div class="introduction">帖子 5788</div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="left">
-                                <img src="images/tuijian_pic.png" alt=""/>
-                            </div>
-                            <div class="right">
-                                <div class="title">流星蝴蝶剑</div>
-                                <div class="introduction">帖子 5788</div>
-                            </div>
-                        </div>
-
-
-                        <div class="item">
-                            <div class="left">
-                                <img src="images/tuijian_pic.png" alt=""/>
-                            </div>
-                            <div class="right">
-                                <div class="title">流星蝴蝶剑</div>
-                                <div class="introduction">帖子 5788</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="item ">
-                    <div class="title clearfix">
-                        <span>热门游戏论坛</span>
-                        <a href="#">查看更多</a>
-                    </div>
-                    <div class="item_content">
-                        <div class="swiper-container swiper-container-recommend">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="item">
-                    <div class="title ">
-                        <span>官方论坛</span>
-                        <a href="#">查看更多</a>
-                    </div>
-                    <div class="focus-lt">
-                        <div class="item">
-                            <div class="left">
-                                <img src="images/tuijian_pic.png" alt=""/>
-                            </div>
-                            <div class="right">
-                                <div class="title">流星蝴蝶剑</div>
-                                <div class="introduction">帖子 5788</div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="left">
-                                <img src="images/tuijian_pic.png" alt=""/>
-                            </div>
-                            <div class="right">
-                                <div class="title">流星蝴蝶剑</div>
-                                <div class="introduction">帖子 5788</div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="left">
-                                <img src="images/tuijian_pic.png" alt=""/>
-                            </div>
-                            <div class="right">
-                                <div class="title">流星蝴蝶剑</div>
-                                <div class="introduction">帖子 5788</div>
-                            </div>
-                        </div>
-
-
-                        <div class="item">
-                            <div class="left">
-                                <img src="images/tuijian_pic.png" alt=""/>
-                            </div>
-                            <div class="right">
-                                <div class="title">流星蝴蝶剑</div>
-                                <div class="introduction">帖子 5788</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="focus-btn">
+        <a href="focus.html"><span>关注</span></a>
     </div>
+</div>
+<div class="product" id="wrapper">
+    <ul class="list">
+        <div class="product-bottom">
+
+            <div class="recommend-list">
+                <div>
+                    <!--热门帖子-->
+                    <div class="item ">
+                        <div class="title clearfix">
+                            <span>热门帖子</span>
+                            <a href="#">查看更多</a>
+                        </div>
+                        <div class="item_content">
+                            <div class="swiper-container swiper-container-recommend">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--热门活动-->
+                    <div class="item ">
+                        <div class="title">
+                            <span>热门活动</span>
+                            <a href="#">查看更多</a>
+                        </div>
+                        <div class="item_content">
+                            <div class="swiper-container swiper-container-activity">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="images/banner_pic1.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--热门论坛-->
+                    <div class="forum-list">
+                        <div class="title">
+                            <span>热门论坛</span>
+                            <a href="#">查看更多</a>
+                        </div>
+                        <div class="list">
+                            <div class="item">
+                                <a href="#"><img src="images/focusList_pic.png" alt=""/></a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#"><img src="images/focusList_pic.png" alt=""/></a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#"><img src="images/focusList_pic.png" alt=""/></a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#"><img src="images/focusList_pic.png" alt=""/></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <!--推荐-->
+                    <div class="item">
+                        <div class="title title_t clearfix">
+                            <span>推荐</span>
+                            <a href="#">查看更多</a>
+                        </div>
+                        <div class="list-recommend">
+                            <div class="item">
+                                <a href="#" class="left">
+                                    <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
+                                    <div class="bottom">
+                                        <span class="user">Riot</span>
+                                        <span class="message">33.2</span>
+                                        <span class="view">5518</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="right">
+                                    <img src="images/recommend_pic.png" alt=""/>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="left">
+                                    <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
+                                    <div class="bottom">
+                                        <span class="user">Riot</span>
+                                        <span class="message">33.2</span>
+                                        <span class="view">5518</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="right">
+                                    <img src="images/recommend_pic.png" alt=""/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <!--精选-->
+                    <div class="item ">
+                        <div class="title title_t">
+                            <span>精选</span>
+                            <a href="#">查看更多</a>
+                        </div>
+                        <div class="list-recommend">
+                            <div class="item">
+                                <a href="#" class="left">
+                                    <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
+                                    <div class="bottom">
+                                        <span class="user">Riot</span>
+                                        <span class="message">33.2</span>
+                                        <span class="view">5518</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="right">
+                                    <img src="images/recommend_pic.png" alt=""/>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="left">
+                                    <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
+                                    <div class="bottom">
+                                        <span class="user">Riot</span>
+                                        <span class="message">33.2</span>
+                                        <span class="view">5518</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="right">
+                                    <img src="images/recommend_pic.png" alt=""/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="item video_item">
+                        <div class="title title_t">
+                            <span>游戏视频</span>
+                            <a href="#">查看更多</a>
+                        </div>
+                        <div class="l_title">
+                            2018LCK冬季赛第一周 TOP5
+                        </div>
+                        <div class="list-video">
+                            <div class="item">
+                                <a href="#" >
+
+                                    <div class="top">
+                                        <!--               <img class="master" src="images/video_pic.png" alt=""/>
+                                                       <img class="btn" src="images/video_icon.png" alt=""/>
+                                                       <span class="time">
+                                                           00:45
+                                                       </span>-->
+
+                                        <iframe id="player" width="100%"
+                                                src="http://www.youtube.com/embed/ziGD7vQOwl8?autoplay=1&controls=1&fs=1"
+                                                frameborder="0"/></iframe>
+
+
+                                    </div>
+                                    <div class="bottom">
+                                        <p>《流星蝴蝶剑》大锤教学，仅此一份独家秘笈仅此一份独家秘笈仅此一份独家秘笈仅此一份独家秘笈仅此一份独家秘笈仅此一份独家秘笈</p>
+
+                                        <span class="message">33.2</span>
+                                        <span class="view">5518</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" >
+                                    <div class="top">
+                                        <!--  <img class="master" src="images/video_pic.png" alt=""/>
+                                          <img class="btn" src="images/video_icon.png" alt=""/>
+                                          <span class="time">
+                                              00:45
+                                          </span>-->
+                                        <iframe width="100%"
+                                                fs="0"
+                                                src="http://www.youtube.com/embed/ziGD7vQOwl8?autoplay=1&controls=1&fs=1"
+                                                frameborder="0"/></iframe>
+
+                                    </div>
+                                    <div class="bottom">
+                                        <p>《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</p>
+                                        <span class="view">5518</span>
+                                        <span class="message">33.2</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" >
+                                    <div class="top">
+                                        <!--        <img class="master" src="images/video_pic.png" alt=""/>
+                                                <img class="btn" src="images/video_icon.png" alt=""/>
+                                                <span class="time">
+                                                    00:45
+                                                </span>-->
+                                        <iframe width="100%"
+                                                src="http://www.youtube.com/embed/ziGD7vQOwl8?autoplay=1&controls=1&fs=1"
+                                                frameborder="0"/></iframe>
+                                    </div>
+                                    <div class="bottom">
+                                        <p>《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</p>
+                                        <span class="view">5518</span>
+                                        <span class="message">33.2</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#" >
+                                    <div class="top">
+                                        <!--              <img class="master" src="images/video_pic.png" alt=""/>
+                                                      <img class="btn" src="images/video_icon.png" alt=""/>
+                                                      <span class="time">
+                                                          00:45
+                                                      </span>-->
+
+                                        <iframe width="100%"
+                                                src="http://www.youtube.com/embed/ziGD7vQOwl8?autoplay=1&controls=1&fs=1"
+                                                frameborder="0"/></iframe>
+                                    </div>
+                                    <div class="bottom">
+                                        <p>《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</p>
+                                        <span class="view">5518</span>
+                                        <span class="message">33.2</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#" >
+                                    <div class="top">
+                                        <!--        <img class="master" src="images/video_pic.png" alt=""/>
+                                                <img class="btn" src="images/video_icon.png" alt=""/>
+                                                <span class="time">
+                                                    00:45
+                                                </span>-->
+
+                                        <iframe width="100%"
+                                                src="http://www.youtube.com/embed/ziGD7vQOwl8?autoplay=1&controls=1&fs=1"
+                                                frameborder="0"/></iframe>
+                                    </div>
+                                    <div class="bottom">
+                                        <p>《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</p>
+                                        <span class="view">5518</span>
+                                        <span class="message">33.2</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="item ">
+                        <div class="title title_t">
+                            <span>推荐</span>
+                            <a href="#">查看更多</a>
+                        </div>
+                        <p>2018LCK冬季赛第一周 TOP5</p>
+                        <div class="list-recommend">
+                            <div class="item">
+                                <a href="#"> <img src="images/video_pic1.png" alt=""/>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="left">
+                                    <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
+                                    <div class="bottom">
+                                        <span class="user">Riot</span>
+                                        <span class="message">33.2</span>
+                                        <span class="view">5518</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="right">
+                                    <img src="images/video_pic1.png" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#" class="left">
+                                    <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
+                                    <div class="bottom">
+                                        <span class="user">Riot</span>
+                                        <span class="message">33.2</span>
+                                        <span class="view">5518</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="right">
+                                    <img src="images/video_pic1.png" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#" class="left">
+                                    <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
+                                    <div class="bottom">
+                                        <span class="user">Riot</span>
+                                        <span class="message">33.2</span>
+                                        <span class="view">5518</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="right">
+                                    <img src="images/video_pic1.png" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#" class="left">
+                                    <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
+                                    <div class="bottom">
+                                        <span class="user">Riot</span>
+                                        <span class="message">33.2</span>
+                                        <span class="view">5518</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="right">
+                                    <img src="images/video_pic1.png" alt=""/>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <p class="">2018LCK冬季赛第一周 TOP5</p>
+                        <div class="list-recommend">
+                            <div class="item">
+                                <a href="#" >
+                                    <img src="images/video_pic2.png" alt=""/>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="left">
+                                    <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
+                                    <div class="bottom">
+                                        <span class="user">Riot</span>
+                                        <span class="message">33.2</span>
+                                        <span class="view">5518</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="right">
+                                    <img src="images/video_pic2.png" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#" class="left">
+                                    <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
+                                    <div class="bottom">
+                                        <span class="user">Riot</span>
+                                        <span class="message">33.2</span>
+                                        <span class="view">5518</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="right">
+                                    <img src="images/video_pic2.png" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#" class="left">
+                                    <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
+                                    <div class="bottom">
+                                        <span class="user">Riot</span>
+                                        <span class="message">33.2</span>
+                                        <span class="view">5518</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="right">
+                                    <img src="images/video_pic2.png" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#" class="left">
+                                    <div class="top">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈</div>
+                                    <div class="bottom">
+                                        <span class="user">Riot</span>
+                                        <span class="message">33.2</span>
+                                        <span class="view">5518</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="right">
+                                    <img src="images/video_pic2.png" alt=""/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </ul>
 </div>
 
 
@@ -592,33 +477,37 @@
 		spaceBetween: 10,
         loop:true,
 	});
-    var swiper = new Swiper('.swiper-container-activity', {
-        slidesPerView: 'auto',
-        paginationClickable: true,
-        spaceBetween: 10,
-        loop:true,
-    });
 
-    var swiper = new Swiper('.swiper-container-activity', {
-        slidesPerView: 'auto',
-        paginationClickable: true,
-        spaceBetween: 10,
-        loop:true,
-    });
-	$(function () {
-	    $('.recommend-btn span').on('click',function () {
-		    $('.recommend-list').stop().animate({left:'0'});
-		    $('.focus-list').stop().animate({left:'100%'});
-            $('.focus-btn span').removeClass('active') ;
-            $(this).addClass('active') ;
-	    })
-	    $('.focus-btn span').on('click',function () {
-		    $('.recommend-list').stop().animate({left:'-100%'});
-		    $('.focus-list').stop().animate({left:'0'});
-            $('.recommend-btn span').removeClass('active') ;
-            $(this).addClass('active') ;
-	    })
-    })
+</script>
+<script>
+	refresher.info ={
+		"pullDownLable": "Pull down to refresh...",
+		"pullingDownLable": "Release to refresh...",
+		"pullUpLable": "Pull up to load more...",
+		"pullingUpLable": "Release to load more...",
+		"loadingLable": "Loading..."
+	}
+	refresher.init({
+		id:"wrapper",
+		pullDownAction:Refresh,
+		pullUpAction:Load
+	});
+	function Refresh() {
+		setTimeout(function () {
+
+			wrapper.refresh()
+			console.log(111)
+		}, 1000);
+
+	}
+
+	function Load() {
+		setTimeout(function () {
+
+			wrapper.refresh()
+			console.log(111)
+		}, 1000);
+	}
 </script>
 </body>
 </html>

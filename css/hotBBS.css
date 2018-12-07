@@ -336,6 +336,8 @@
     display: block;
     overflow: hidden;
     height: 2.5rem;
+    flex: 1;
+    margin: 0 0.2rem;
     width: 32%;
 }
 

@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="css/common.css"/>
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/hotBBS.css">
+    <link rel="stylesheet" href="css/pullToRefresh.css"/>
+    <script src="js/iscroll.js"></script>
+    <script src="js/pullToRefresh.js"></script>
+    <script src="js/colorful.js"></script>
 </head>
 <body>
 
@@ -25,191 +29,226 @@
         </div>
     </div>
 </div>
-<style>
-</style>
-<div class="bbsDetails">
-    <div class="banner">
+<div  id="wrapper">
+    <ul>
 
-        <div class="swiper-container swiper-container-recommend">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+        <div class="bbsDetails" >
+            <div class="banner">
+
+                <div class="swiper-container swiper-container-recommend">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bbsInfo">
+                <div class="info_pic">
+                    <img src="images/bbs_details_pic.png" alt=""/>
+                </div>
+                <div class="info_details">
+                    <div class="info_top">
+                        吃鸡秘笈
+                    </div>
+                    <div class="info_bottom">
+                        <p>
+                            <span>精华:</span>
+                            <span>12</span>
+                        </p>
+                        <p>
+                            <span>今日:</span>
+                            <span>5532</span>
+                        </p>
+                        <p>
+                            <span>关注:</span>
+                            <span>125532</span>
+                        </p>
+                    </div>
+                    <div class="info_btn"> + 关注</div>
+                </div>
+            </div>
+            <div class=""></div>
+        </div>
+        <div class="stick_list">
+            <div class="stick_item clearfix">
+                <a href="#">
+                    <span>置顶</span>
+                    <p>SHAREit GAME社区管理条例</p>
+                </a>
+            </div>
+
+            <div class="stick_item clearfix">
+                <a href="#">
+                    <span>置顶</span>
+                    <p>SHAREit GAME社区赚钱指南，你可以去了解下，非GAME社区赚钱指南</p>
+                </a>
+            </div>
+
+            <div class="stick_item clearfix">
+                <a href="#">
+                    <span>置顶</span>
+                    <p>【夺金榜】如何畅玩社区，如何参加活动？</p>
+                </a>
             </div>
         </div>
-    </div>
-    <div class="bbsInfo">
-        <div class="info_pic">
-            <img src="images/bbs_details_pic.png" alt=""/>
-        </div>
-        <div class="info_details">
-            <div class="info_top">
-                吃鸡秘笈
-            </div>
-            <div class="info_bottom">
-                <p>
-                    <span>精华:</span>
-                    <span>12</span>
+
+
+        <div class="bbs_tab clearfix">
+            <div class="bbs_tab_left">
+                <p class="active">
+                    <span>全部</span>
                 </p>
                 <p>
-                    <span>今日:</span>
-                    <span>5532</span>
+                    <span>精华</span>
                 </p>
                 <p>
-                    <span>关注:</span>
-                    <span>125532</span>
+                    <span>官方</span>
                 </p>
             </div>
-            <div class="info_btn"> + 关注</div>
-        </div>
-    </div>
-    <div class=""></div>
-</div>
-<div class="stick_list">
-    <div class="stick_item clearfix">
-        <a href="#">
-            <span>置顶</span>
-            <p>SHAREit GAME社区管理条例</p>
-        </a>
-    </div>
-
-    <div class="stick_item clearfix">
-        <a href="#">
-            <span>置顶</span>
-            <p>SHAREit GAME社区赚钱指南，你可以去了解下，非GAME社区赚钱指南</p>
-        </a>
-    </div>
-
-    <div class="stick_item clearfix">
-        <a href="#">
-            <span>置顶</span>
-            <p>【夺金榜】如何畅玩社区，如何参加活动？</p>
-        </a>
-    </div>
-</div>
-
-
-<div class="bbs_tab clearfix">
-    <div class="bbs_tab_left">
-        <p class="active">
-            <span>全部</span>
-        </p>
-        <p>
-            <span>精华</span>
-        </p>
-        <p>
-            <span>官方</span>
-        </p>
-    </div>
-    <div class="bbs_tab_rank">
-        <img src="images/bbs_rank_icon.png" alt=""/>
-    </div>
-</div>
-
-<div class="bbs_list">
-    <div class="bbs_item">
-        <div class="bbs_item_info">
-            <div class="bbs_item_info_pic"><img src="images/bbs_details_pic.png" alt=""/></div>
-            <div class="bbs_item_info_content">
-                <p class="title">吃鸡秘笈</p>
-                <p class="time">一小时前</p>
+            <div class="bbs_tab_rank">
+                <img src="images/bbs_rank_icon.png" alt=""/>
             </div>
         </div>
+        <style>
+            #wrapper{
 
-        <div class="bbs_item_info_details">
-            <p class="title">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈，错过了后悔去吧！</p>
-            <p class="tps">填在手机上，到现在还没发现这类游戏到现在还没发现这类游戏到现在还没发现这类游戏，如果大佬可呀......</p>
-        </div>
-        <div class="bbs_item_info_banner">
-            <a href="#"><img src="images/video_pic.png" alt=""/></a>
-            <a href="#"><img src="images/video_pic.png" alt=""/></a>
-            <a href="#"><img src="images/video_pic.png" alt=""/></a>
-        </div>
-        <div class="bbs_item_info_meta clearfix">
-            <span class="message">55.8万</span>
-            <span class="praise">33.2</span>
-            <span class="shits">5518</span>
-        </div>
-    </div>
+                overflow-y: scroll;
+            }
+            .bbs_list{
+                -webkit-box-flex: 1;
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                background-color: #fff;
+                -webkit-overflow-scrolling: touch;
+            }
 
-    <div class="bbs_item">
-        <div class="bbs_item_info">
-            <div class="bbs_item_info_pic"><img src="images/bbs_details_pic.png" alt=""/></div>
-            <div class="bbs_item_info_content">
-                <p class="title">吃鸡秘笈</p>
-                <p class="time">一小时前</p>
+            .bbs_list ul {
+                overflow-y: scroll;
+
+                padding: 0 0.3rem 1.5rem;
+                margin-top: 1.3rem;
+            }
+        </style>
+        <div class="bbs_list" >
+            <ul class="list">
+                <li>
+                    <div class="bbs_item">
+                        <div class="bbs_item_info">
+                            <div class="bbs_item_info_pic"><img src="images/bbs_details_pic.png" alt=""/></div>
+                            <div class="bbs_item_info_content">
+                                <p class="title">吃鸡秘笈</p>
+                                <p class="time">一小时前</p>
+                            </div>
+                        </div>
+
+                        <div class="bbs_item_info_details">
+                            <p class="title">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈，错过了后悔去吧！</p>
+                            <p class="tps">填在手机上，到现在还没发现这类游戏到现在还没发现这类游戏到现在还没发现这类游戏，如果大佬可呀......</p>
+                        </div>
+                        <div class="bbs_item_info_banner">
+                            <a href="#"><img src="images/video_pic.png" alt=""/></a>
+                            <a href="#"><img src="images/video_pic.png" alt=""/></a>
+                            <a href="#"><img src="images/video_pic.png" alt=""/></a>
+                        </div>
+                        <div class="bbs_item_info_meta clearfix">
+                            <span class="message">55.8万</span>
+                            <span class="praise">33.2</span>
+                            <span class="shits">5518</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bbs_item">
+                        <div class="bbs_item_info">
+                            <div class="bbs_item_info_pic"><img src="images/bbs_details_pic.png" alt=""/></div>
+                            <div class="bbs_item_info_content">
+                                <p class="title">吃鸡秘笈</p>
+                                <p class="time">一小时前</p>
+                            </div>
+                        </div>
+
+                        <div class="bbs_item_info_details">
+                            <p class="title">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈，错过了后悔去吧！</p>
+                            <p class="tps">填在手机上，到现在还没发现这类游戏到现在还没发现这类游戏到现在还没发现这类游戏，如果大佬可呀......</p>
+                        </div>
+                        <div class="bbs_item_info_banner">
+                            <a href="#"><img src="images/video_pic.png" alt=""/></a>
+                            <a href="#"><img src="images/video_pic.png" alt=""/></a>
+                            <a href="#"><img src="images/video_pic.png" alt=""/></a>
+                        </div>
+                        <div class="bbs_item_info_meta clearfix">
+                            <span class="message">55.8万</span>
+                            <span class="praise">33.2</span>
+                            <span class="shits">5518</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bbs_item">
+                        <div class="bbs_item_info">
+                            <div class="bbs_item_info_pic"><img src="images/bbs_details_pic.png" alt=""/></div>
+                            <div class="bbs_item_info_content">
+                                <p class="title">吃鸡秘笈</p>
+                                <p class="time">一小时前</p>
+                            </div>
+                        </div>
+
+                        <div class="bbs_item_info_details">
+                            <p class="title">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈，错过了后悔去吧！</p>
+                            <p class="tps">填在手机上，到现在还没发现这类游戏到现在还没发现这类游戏到现在还没发现这类游戏，如果大佬可呀......</p>
+                        </div>
+                        <div class="bbs_item_info_banner">
+                            <a href="#"><img src="images/video_pic.png" alt=""/></a>
+                            <a href="#"><img src="images/video_pic.png" alt=""/></a>
+                            <a href="#"><img src="images/video_pic.png" alt=""/></a>
+                        </div>
+                        <div class="bbs_item_info_meta clearfix">
+                            <span class="message">55.8万</span>
+                            <span class="praise">33.2</span>
+                            <span class="shits">5518</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bbs_item">
+                        <div class="bbs_item_info">
+                            <div class="bbs_item_info_pic"><img src="images/bbs_details_pic.png" alt=""/></div>
+                            <div class="bbs_item_info_content">
+                                <p class="title">吃鸡秘笈</p>
+                                <p class="time">一小时前</p>
+                            </div>
+                        </div>
+
+                        <div class="bbs_item_info_details">
+                            <p class="title">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈，错过了后悔去吧！</p>
+                            <p class="tps">填在手机上，到现在还没发现这类游戏到现在还没发现这类游戏到现在还没发现这类游戏，如果大佬可呀......</p>
+                        </div>
+                        <div class="bbs_item_info_banner">
+                            <a href="#"><img src="images/video_pic.png" alt=""/></a>
+                            <a href="#"><img src="images/video_pic.png" alt=""/></a>
+                            <a href="#"><img src="images/video_pic.png" alt=""/></a>
+                        </div>
+                        <div class="bbs_item_info_meta clearfix">
+                            <span class="message">55.8万</span>
+                            <span class="praise">33.2</span>
+                            <span class="shits">5518</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+
+            <div class="new_post">
+                <img src="images/add_post_icon.png" alt=""/>
             </div>
         </div>
+    </ul>
 
-        <div class="bbs_item_info_details">
-            <p class="title">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈，错过了后悔去吧！</p>
-            <p class="tps">填在手机上，到现在还没发现这类游戏到现在还没发现这类游戏到现在还没发现这类游戏，如果大佬可呀......</p>
-        </div>
-        <div class="bbs_item_info_banner bbs_item_info_banner1">
-            <a href="#"><img src="images/video_pic.png" alt=""/></a>
-        </div>
-        <div class="bbs_item_info_meta clearfix">
-            <span class="message">55.8万</span>
-            <span class="praise">33.2</span>
-            <span class="shits">5518</span>
-        </div>
-    </div>
 
-    <div class="bbs_item">
-        <div class="bbs_item_info">
-            <div class="bbs_item_info_pic"><img src="images/bbs_details_pic.png" alt=""/></div>
-            <div class="bbs_item_info_content">
-                <p class="title">吃鸡秘笈</p>
-                <p class="time">一小时前</p>
-            </div>
-        </div>
-
-        <div class="bbs_item_info_details">
-            <p class="title">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈，错过了后悔去吧！</p>
-            <p class="tps">填在手机上，到现在还没发现这类游戏到现在还没发现这类游戏到现在还没发现这类游戏，如果大佬可呀......</p>
-        </div>
-        <div class="bbs_item_info_banner">
-            <a href="#"><img src="images/video_pic.png" alt=""/></a>
-            <a href="#"><img src="images/video_pic.png" alt=""/></a>
-            <a href="#"><img src="images/video_pic.png" alt=""/></a>
-        </div>
-        <div class="bbs_item_info_meta clearfix">
-            <span class="message">55.8万</span>
-            <span class="praise">33.2</span>
-            <span class="shits">5518</span>
-        </div>
-    </div>
-
-    <div class="bbs_item">
-        <div class="bbs_item_info">
-            <div class="bbs_item_info_pic"><img src="images/bbs_details_pic.png" alt=""/></div>
-            <div class="bbs_item_info_content">
-                <p class="title">吃鸡秘笈</p>
-                <p class="time">一小时前</p>
-            </div>
-        </div>
-
-        <div class="bbs_item_info_details">
-            <p class="title">《流星蝴蝶剑》大锤教学，仅此一份独家秘笈，错过了后悔去吧！</p>
-            <p class="tps">填在手机上，到现在还没发现这类游戏到现在还没发现这类游戏到现在还没发现这类游戏，如果大佬可呀......</p>
-        </div>
-        <div class="bbs_item_info_banner">
-            <a href="#"><img src="images/video_pic.png" alt=""/></a>
-            <a href="#"><img src="images/video_pic.png" alt=""/></a>
-            <a href="#"><img src="images/video_pic.png" alt=""/></a>
-        </div>
-        <div class="bbs_item_info_meta clearfix">
-            <span class="message">55.8万</span>
-            <span class="praise">33.2</span>
-            <span class="shits">5518</span>
-        </div>
-    </div>
-
-    <div class="new_post">
-        <img src="images/add_post_icon.png" alt=""/>
-    </div>
 </div>
 </body>
 </html>
@@ -228,4 +267,36 @@
             $(this).addClass('active');
         })
     })
+</script>
+
+
+<script>
+	refresher.info ={
+		"pullDownLable": "Pull down to refresh...",
+		"pullingDownLable": "Release to refresh...",
+		"pullUpLable": "Pull up to load more...",
+		"pullingUpLable": "Release to load more...",
+		"loadingLable": "Loading..."
+	}
+	refresher.init({
+		id:"wrapper",
+		pullDownAction:Refresh,
+		pullUpAction:Load
+	});
+	function Refresh() {
+		setTimeout(function () {
+
+			wrapper.refresh()
+			console.log(111)
+		}, 1000);
+
+	}
+
+	function Load() {
+		setTimeout(function () {
+
+			wrapper.refresh()
+			console.log(111)
+		}, 1000);
+	}
 </script>

@@ -111,7 +111,12 @@ body{
     bottom: 0;
     z-index: 998;
 }
+#wrapper .list {
+    overflow-y: scroll;
 
+    padding: 0 0.3rem ;
+    margin-top: 1.3rem;
+}
 .content_top{
     height: 1.3rem;
     position: fixed;
