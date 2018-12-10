@@ -16,11 +16,20 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/hotBBS.css">
     <script type="text/javascript" src="js/jquery.raty.min.js"></script>
+    <link rel="stylesheet" href="css/pullToRefresh.css" />
+    <script src="js/iscroll.js"></script>
+    <script src="js/pullToRefresh.js"></script>
+    <script src="js/colorful.js"></script>
+    <style>
+        .pullUp {
+            padding-bottom: 2.3rem
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="content_top" id="wrapper">
+    <div class="content_top">
         <div class="content">
             <p>热门论坛</p>
             <div class="left">
@@ -33,128 +42,132 @@
             </div>
         </div>
     </div>
-    <style>
-    </style>
-    <div class="bbsDetails">
-        <div class="banner">
 
-            <div class="swiper-container swiper-container-recommend">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+    <div id="wrapper">
+        <ul>
+
+            <div class="bbsDetails">
+                <div class="banner">
+
+                    <div class="swiper-container swiper-container-recommend">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/banner_pic.png"></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bbsInfo">
+                    <div class="info_pic">
+                        <img src="images/bbs_details_pic.png" alt="" />
+                    </div>
+                    <div class="info_details">
+                        <div class="info_top">
+                            吃鸡秘笈
+                        </div>
+                        <div class="info_bottom">
+                            <p>
+                                <span>精华:</span>
+                                <span>12</span>
+                            </p>
+                            <p>
+                                <span>今日:</span>
+                                <span>5532</span>
+                            </p>
+                            <p>
+                                <span>关注:</span>
+                                <span>125532</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bbs_label">
+                    <span>打击感</span>
+                    <span>联机</span>
+                    <span>打击感</span>
+                    <span>联机</span>
+                    <div class="score">9.8</div>
+                </div>
+                <div class="bbs_vendor">
+                    厂商：网易游戏
+                </div>
+                <div class="bbs_operation">
+                    <div class="focus">
+                        <span>+ 关注</span>
+                    </div>
+                    <div class="grade clearfix"><span>评分</span>
+                        <div id="star"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="bbsInfo">
-            <div class="info_pic">
-                <img src="images/bbs_details_pic.png" alt="" />
-            </div>
-            <div class="info_details">
-                <div class="info_top">
-                    吃鸡秘笈
+            <div class="stick_list">
+                <div class="stick_item clearfix">
+                    <a href="#">
+                        <span>置顶</span>
+                        <p>SHAREit GAME社区管理条例</p>
+                    </a>
                 </div>
-                <div class="info_bottom">
-                    <p>
-                        <span>精华:</span>
-                        <span>12</span>
-                    </p>
-                    <p>
-                        <span>今日:</span>
-                        <span>5532</span>
-                    </p>
-                    <p>
-                        <span>关注:</span>
-                        <span>125532</span>
-                    </p>
+
+                <div class="stick_item clearfix">
+                    <a href="#">
+                        <span>置顶</span>
+                        <p>SHAREit GAME社区赚钱指南，你可以去了解下，非GAME社区赚钱指南</p>
+                    </a>
+                </div>
+
+                <div class="stick_item clearfix">
+                    <a href="#">
+                        <span>置顶</span>
+                        <p>【夺金榜】如何畅玩社区，如何参加活动？</p>
+                    </a>
+                </div>
+
+                <div class="stick_item clearfix">
+                    <a href="#">
+                        <span>置顶</span>
+                        <p>SHAREit GAME社区管理条例</p>
+                    </a>
+                </div>
+
+                <div class="stick_item clearfix">
+                    <a href="#">
+                        <span>置顶</span>
+                        <p>SHAREit GAME社区赚钱指南，你可以去了解下，非GAME社区赚钱指南</p>
+                    </a>
+                </div>
+
+                <div class="stick_item clearfix">
+                    <a href="#">
+                        <span>置顶</span>
+                        <p>【夺金榜】如何畅玩社区，如何参加活动？</p>
+                    </a>
+                </div>
+                <div class="stick_item clearfix">
+                    <a href="#">
+                        <span>置顶</span>
+                        <p>SHAREit GAME社区管理条例</p>
+                    </a>
+                </div>
+
+                <div class="stick_item clearfix">
+                    <a href="#">
+                        <span>置顶</span>
+                        <p>SHAREit GAME社区赚钱指南，你可以去了解下，非GAME社区赚钱指南</p>
+                    </a>
+                </div>
+
+                <div class="stick_item clearfix">
+                    <a href="#">
+                        <span>置顶</span>
+                        <p>【夺金榜】如何畅玩社区，如何参加活动？</p>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="bbs_label">
-            <span>打击感</span>
-            <span>联机</span>
-            <span>打击感</span>
-            <span>联机</span>
-            <div class="score">9.8</div>
-        </div>
-        <div class="bbs_vendor">
-            厂商：网易游戏
-        </div>
-        <div class="bbs_operation">
-            <div class="focus">
-                <span>+ 关注</span>
-            </div>
-            <div class="grade clearfix"><span>评分</span>
-                <div id="star"></div>
-            </div>
-        </div>
+
+        </ul>
     </div>
-    <div class="stick_list">
-        <div class="stick_item clearfix">
-            <a href="#">
-                <span>置顶</span>
-                <p>SHAREit GAME社区管理条例</p>
-            </a>
-        </div>
-
-        <div class="stick_item clearfix">
-            <a href="#">
-                <span>置顶</span>
-                <p>SHAREit GAME社区赚钱指南，你可以去了解下，非GAME社区赚钱指南</p>
-            </a>
-        </div>
-
-        <div class="stick_item clearfix">
-            <a href="#">
-                <span>置顶</span>
-                <p>【夺金榜】如何畅玩社区，如何参加活动？</p>
-            </a>
-        </div>
-
-        <div class="stick_item clearfix">
-            <a href="#">
-                <span>置顶</span>
-                <p>SHAREit GAME社区管理条例</p>
-            </a>
-        </div>
-
-        <div class="stick_item clearfix">
-            <a href="#">
-                <span>置顶</span>
-                <p>SHAREit GAME社区赚钱指南，你可以去了解下，非GAME社区赚钱指南</p>
-            </a>
-        </div>
-
-        <div class="stick_item clearfix">
-            <a href="#">
-                <span>置顶</span>
-                <p>【夺金榜】如何畅玩社区，如何参加活动？</p>
-            </a>
-        </div>
-        <div class="stick_item clearfix">
-            <a href="#">
-                <span>置顶</span>
-                <p>SHAREit GAME社区管理条例</p>
-            </a>
-        </div>
-
-        <div class="stick_item clearfix">
-            <a href="#">
-                <span>置顶</span>
-                <p>SHAREit GAME社区赚钱指南，你可以去了解下，非GAME社区赚钱指南</p>
-            </a>
-        </div>
-
-        <div class="stick_item clearfix">
-            <a href="#">
-                <span>置顶</span>
-                <p>【夺金榜】如何畅玩社区，如何参加活动？</p>
-            </a>
-        </div>
-    </div>
-
     <div class="bbs_bottom">
         <div class="comment"><a href="#">评价（12943）</a></div>
         <div class="pgc"><a href="#">攻略(PGC)（12943）</a></div>
@@ -191,6 +204,35 @@
 
 
 <script>
+    refresher.info = {
+        "pullDownLable": "Pull down to refresh...",
+        "pullingDownLable": "Release to refresh...",
+        "pullUpLable": "Pull up to load more...",
+        "pullingUpLable": "Release to load more...",
+        "loadingLable": "Loading..."
+    }
+    refresher.init({
+        id: "wrapper",
+        pullDownAction: Refresh,
+        pullUpAction: Load
+    });
+    function Refresh() {
+        setTimeout(function () {
+
+            wrapper.refresh()
+            console.log(111)
+        }, 1000);
+
+    }
+
+    function Load() {
+        setTimeout(function () {
+
+            wrapper.refresh()
+            console.log(111)
+        }, 1000);
+    }
+
     var swiper = new Swiper('.swiper-container-recommend', {
         slidesPerView: 'auto',
         paginationClickable: true,
@@ -213,7 +255,7 @@
 
             }
         });
-        $(document).on('click','.bbs_operation .focus', function () {
+        $(document).on('click', '.bbs_operation .focus', function () {
             var th = $(this).find('span');
             var is = th.hasClass('follow_active');
             if (!is) {
@@ -228,4 +270,3 @@
         });
     })
 </script>
-

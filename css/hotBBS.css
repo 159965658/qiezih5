@@ -499,6 +499,7 @@
     line-height: 1.5rem;
     background: #fff;
     display: flex;
+    z-index: 999;
 }
 .bbs_bottom .comment{
     text-align: center;
