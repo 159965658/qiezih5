@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/hotBBS.css">
-    <script type="text/javascript" src="js/jquery.raty.min.js"></script>
     <link rel="stylesheet" href="css/pullToRefresh.css" />
     <script src="js/iscroll.js"></script>
     <script src="js/pullToRefresh.js"></script>
     <script src="js/colorful.js"></script>
+    <script type="text/javascript" src="js/jquery.raty.min.js"></script>
     <style>
         .pullUp {
             padding-bottom: 2.3rem
@@ -204,35 +204,6 @@
 
 
 <script>
-    refresher.info = {
-        "pullDownLable": "Pull down to refresh...",
-        "pullingDownLable": "Release to refresh...",
-        "pullUpLable": "Pull up to load more...",
-        "pullingUpLable": "Release to load more...",
-        "loadingLable": "Loading..."
-    }
-    refresher.init({
-        id: "wrapper",
-        pullDownAction: Refresh,
-        pullUpAction: Load
-    });
-    function Refresh() {
-        setTimeout(function () {
-
-            wrapper.refresh()
-            console.log(111)
-        }, 1000);
-
-    }
-
-    function Load() {
-        setTimeout(function () {
-
-            wrapper.refresh()
-            console.log(111)
-        }, 1000);
-    }
-
     var swiper = new Swiper('.swiper-container-recommend', {
         slidesPerView: 'auto',
         paginationClickable: true,
@@ -250,10 +221,29 @@
             starOn: 'images/star-on2.png',
             //点击星数回调
             click: function (score, evt) {
+                $(this).find('img').attr('src', 'images/star-off.png');
+                for (var i = 0; i < score; i++) {
+                    $(this).find('img').eq(i).attr('src', 'images/star-on2.png')
+                }
+
                 console.log(score);
                 //                alert('ID: ' + $(this).attr('id') + "\nscore: " + score + "\nevent: " + evt);
 
             }
+        });
+
+
+        refresher.info = {
+            "pullDownLable": "Pull down to refresh...",
+            "pullingDownLable": "Release to refresh...",
+            "pullUpLable": "Pull up to load more...",
+            "pullingUpLable": "Release to load more...",
+            "loadingLable": "Loading..."
+        }
+        refresher.init({
+            id: "wrapper",
+            pullDownAction: Refresh,
+            pullUpAction: Load
         });
         $(document).on('click', '.bbs_operation .focus', function () {
             var th = $(this).find('span');
@@ -269,4 +259,23 @@
             }
         });
     })
+
+
+    function Refresh() {
+        setTimeout(function () {
+
+            wrapper.refresh()
+            console.log(111)
+        }, 1000);
+
+    }
+
+    function Load() {
+        setTimeout(function () {
+
+            wrapper.refresh()
+            console.log(111)
+        }, 1000);
+    }
+
 </script>
