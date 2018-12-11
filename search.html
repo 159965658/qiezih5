@@ -15,9 +15,18 @@
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/pullToRefresh.css" />
+    <script src="js/iscroll.js"></script>
+    <script src="js/pullToRefresh.js"></script>
+    <script src="js/colorful.js"></script>
+    <link rel="stylesheet" href="css/hotBBS.css">
 
 </head>
-
+<style>
+    #wrapper{
+        display: none;
+    }
+</style>
 <body>
     <div class="content_top">
         <div class="content">
@@ -171,6 +180,90 @@
 
     </div>
 
+    <div class="hotBBS" id="wrapper" style="position:relative">
+        <ul class="list">
+            <li>
+                <div class="item">
+                    <div class="left">
+                        <img src="images/hotBBS_pic.png" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="top">吃鸡秘笈</div>
+                        <div class="bottom">
+                            <p><span>主题数：</span><span>26112</span></p>
+                            <p><span>关注人数：</span><span>400302</span></p>
+                        </div>
+                        <div class="btn">+关注</div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="item">
+                    <div class="left">
+                        <img src="images/hotBBS_pic.png" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="top">吃鸡秘笈</div>
+                        <div class="bottom">
+                            <p><span>主题数：</span><span>26112</span></p>
+                            <p><span>关注人数：</span><span>400302</span></p>
+                        </div>
+                        <div class="btn">+关注</div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="item">
+                    <div class="left">
+                        <img src="images/hotBBS_pic.png" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="top">吃鸡秘笈</div>
+                        <div class="bottom">
+                            <p><span>主题数：</span><span>26112</span></p>
+                            <p><span>关注人数：</span><span>400302</span></p>
+                        </div>
+                        <div class="btn">+关注</div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="item">
+                    <div class="left">
+                        <img src="images/hotBBS_pic.png" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="top">吃鸡秘笈</div>
+                        <div class="bottom">
+                            <p><span>主题数：</span><span>26112</span></p>
+                            <p><span>关注人数：</span><span>400302</span></p>
+                        </div>
+                        <div class="btn">+关注</div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="item">
+                    <div class="left">
+                        <img src="images/hotBBS_pic.png" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="top">吃鸡秘笈</div>
+                        <div class="bottom">
+                            <p><span>主题数：</span><span>26112</span></p>
+                            <p><span>关注人数：</span><span>400302</span></p>
+                        </div>
+                        <div class="btn">+关注</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
     <div class="content_bottom">
         <a href="#" class="active">
             <span><img src="images/bottom_phone.png" alt="" /></span>
@@ -212,8 +305,10 @@
 </script>
 <script>
     $(function () {
+
         var settime = 500, // 切换标签的时间
-            typeIndex = 0//搜索类型 默认为0
+            typeIndex = 0, //搜索类型 默认为0
+              isData = false //是否有搜索数据
             ;
         //清空内容
         $('#removeCon').on('click',function(){
@@ -221,6 +316,8 @@
         });
         //搜索
         $('.content > .right').on('click', function () {
+	        isData = true ; //假设点击搜索后产生数据
+
             swipeConAjax();
         });
         //获取搜索内容
@@ -234,8 +331,14 @@
         //发送请求
         function swipeConAjax(index = typeIndex) { // 0 == 用户 1 == 论坛 2 == 帖子
             typeIndex = index;
+
             setTimeout(() => { //此处  等到切换标签完成 进行 请求。根据后台需求完成
                 //清空搜索内容   setSearchCon();
+	            if(isData){
+		            $('#wrapper').show();
+		            $('.swiper2').hide();
+
+	            }
                 console.log(`类型：${typeIndex}, 搜索内容：${getSearchCon()}`); // ajax 请求
             }, settime);
 
@@ -284,6 +387,36 @@
             }
         });
     });
+
+
+    refresher.info = {
+	    "pullDownLable": "Pull down to refresh...",
+	    "pullingDownLable": "Release to refresh...",
+	    "pullUpLable": "Pull up to load more...",
+	    "pullingUpLable": "Release to load more...",
+	    "loadingLable": "Loading..."
+    }
+    refresher.init({
+	    id: "wrapper",
+	    pullDownAction: Refresh,
+	    pullUpAction: Load
+    });
+    function Refresh() {
+        // console.log('刷新');
+	    setTimeout(function () {
+
+		    wrapper.refresh()
+		    console.log(111)
+	    }, 1000);
+
+    }
+    function Load() {
+	    setTimeout(function () {
+
+		    wrapper.refresh()
+		    console.log(111)
+	    }, 1000);
+    }
 </script>
 
 </html>
