@@ -26,6 +26,9 @@
     #wrapper{
         display: none;
     }
+    .pullDown .loader{
+        padding-top: 2.5rem;
+    }
 </style>
 <body>
     <div class="content_top">
@@ -180,7 +183,7 @@
 
     </div>
 
-    <div class="hotBBS" id="wrapper" style="position:relative">
+    <div class="hotBBS" id="wrapper">
         <ul class="list">
             <li>
                 <div class="item">
@@ -402,7 +405,6 @@
 	    pullUpAction: Load
     });
     function Refresh() {
-        // console.log('刷新');
 	    setTimeout(function () {
 
 		    wrapper.refresh()

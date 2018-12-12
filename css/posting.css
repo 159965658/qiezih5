@@ -239,7 +239,7 @@
     margin-top: 0.3rem;
 }
 
-.postDetails_operation{
+.postDetails_operation {
     justify-content: center;
     align-items: center;
     height: 2rem;
@@ -377,6 +377,10 @@
     font-size: 0.42rem;
     color: #333333;
     text-align: left;
+}
+
+.postDetails_reply .list .item .top .info .title i {
+    color: #557cff;
 }
 
 .postDetails_reply .list .item .top .info .floor {
