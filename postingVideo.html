@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>发布视频</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/arteditor.js"></script>
+    <script src="js/common.js"></script>
+
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/postingVideo.css">
+</head>
+<body>
+
+<div class="posting_top content_top">
+    <div class="content">
+        <p>发布视频</p>
+        <div class="left">
+            <a href="javascript:history.go(-1)"><img src="images/back_icon.png"></a>
+        </div>
+        <div class="right published">发送</div>
+    </div>
+</div>
+
+<style>
+
+</style>
+<div class="posting_url">
+	<p class="title">输入视频连接</p>
+	<p><input type="text" class="videoUrl"/></p>
+	<p class="help"><span>发视频方法</span></p>
+</div>
+<div class="posting_content">
+    <div class="posting_title">
+        <textarea placeholder="标题（必填，不超过30个字）"></textarea>
+        <span class="wordwrap"><var class="word">20</var>/20</span>
+    </div>
+    <div class="article-content" id="content">
+    </div>
+</div>
+
+
+
+<div class="mask">
+    <div class="mask_bg"></div>
+    <div class="mask_content">
+        <p class="title">发布视频方法</p>
+        <p>1.打开You Tu Be网站</p>
+        <p>2.选取发布的视频</p>
+        <p>3.点击分享视频</p>
+        <p>4.复制此视频的链接</p>
+        <p>5.粘贴此输入框</p>
+
+        <div class="mask_bottom">关闭</div>
+    </div>
+</div>
+
+</body>
+
+<script>
+
+	$(function(){
+        $('#content').css({'height':$(window).height()-$('.content_top').height()-$('.posting_title').height()-$('.posting_bottom').height()-50+'px'});
+	    $('.help').on('click',function(){
+
+	        $('.mask_content').html('<p class="title">发布视频方法</p>\n' +
+	            '        <p>1.打开You Tu Be网站</p>\n' +
+	            '        <p>2.选取发布的视频</p>\n' +
+	            '        <p>3.点击分享视频</p>\n' +
+	            '        <p>4.复制此视频的链接</p>\n' +
+	            '        <p>5.粘贴此输入框</p>\n' +
+	            '        <div class="mask_bottom">关闭</div>');
+		    $('.mask').fadeIn() ;
+	    });
+
+
+	    $('.published').on('click',function () {
+	        $('.mask').fadeIn() ;
+	        var str = $('.videoUrl').val();
+	        var reg = RegExp(/www.youtube.com/);
+	        if(reg.exec(str)){
+		        // 包含
+		        $('.mask_content').html('<p>上传成功</p>');
+	        }else {
+
+	            $('.mask_content').html('<p>上传链接不能为空且必须是youtube的链接哦</p>');
+            }
+        })
+	    $('.mask_bottom,.mask_bg').on('click',function(){
+		    $('.mask').fadeOut() ;
+	    })
+
+		var wordCount = $(".posting_title"),
+			textArea = wordCount.find("textarea"),
+			word = wordCount.find(".word");
+		//调用
+		statInputNum(textArea,word);
+
+	}) ;
+
+	function statInputNum(textArea,numItem) {
+		var max = numItem.text(),
+			curLength;
+		textArea[0].setAttribute("maxlength", max);
+		curLength = textArea.val().length;
+		numItem.text(max - curLength);
+		textArea.on('input propertychange', function () {
+			var _value = $(this).val().replace(/\n/gi,"");
+			numItem.text(max - _value.length);
+		});
+	}
+
+	$('#content').artEditor({
+		imgTar: '#imageUpload',
+		limitSize: 5,   // 兆
+		showServer: false,
+		uploadUrl: '',
+		data: {},
+		uploadField: 'image',
+		placeholader: '<p>写下你的想法</p>',
+		validHtml: ["br"],
+		beforeUpload: function(imgBase64) {
+			// 处理完之后，必须return图片数据
+			// return imgBase64
+		},
+		uploadSuccess: function(res) {
+			// 这里是处理返回数据业务逻辑的地方
+			// `res`为服务器返回`status==200`的`response`
+			// 如果这里`return <path>`将会以`<img src='path'>`的形式插入到页面
+			// 如果发现`res`不符合业务逻辑
+			// 比如后台告诉你这张图片不对劲
+			// 麻烦返回 `false`
+			// 当然如果`showServer==false`
+			// 无所谓咯
+			return res.path;
+		},
+		uploadError: function(res) {
+			//这里做上传失败的操作
+			//也就是http返回码非200的时候
+			console.log(res);
+		}
+	});
+</script>
+</html>

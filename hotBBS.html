@@ -20,11 +20,6 @@
     <script src="js/pullToRefresh.js"></script>
     <script src="js/colorful.js"></script>
     <script type="text/javascript" src="js/jquery.raty.min.js"></script>
-    <style>
-        .pullUp {
-            padding-bottom: 2.3rem
-        }
-    </style>
 </head>
 
 <body>
@@ -204,7 +199,7 @@
 
 
 <script>
-    var swiper = new Swiper('.swiper-container-recommend', {
+	var swiper = new Swiper('.swiper-container-recommend', {
         slidesPerView: 'auto',
         paginationClickable: true,
         spaceBetween: 10,
@@ -221,10 +216,10 @@
             starOn: 'images/star-on2.png',
             //点击星数回调
             click: function (score, evt) {
-                $(this).find('img').attr('src', 'images/star-off.png');
-                for (var i = 0; i < score; i++) {
-                    $(this).find('img').eq(i).attr('src', 'images/star-on2.png')
-                }
+                  $(this).find('img').attr('src','images/star-off.png');
+                  for(var i=0 ;i<score;i++){
+	                  $(this).find('img').eq(i).attr('src','images/star-on2.png')
+                  }
 
                 console.log(score);
                 //                alert('ID: ' + $(this).attr('id') + "\nscore: " + score + "\nevent: " + evt);
@@ -233,19 +228,19 @@
         });
 
 
-        refresher.info = {
-            "pullDownLable": "Pull down to refresh...",
-            "pullingDownLable": "Release to refresh...",
-            "pullUpLable": "Pull up to load more...",
-            "pullingUpLable": "Release to load more...",
-            "loadingLable": "Loading..."
-        }
-        refresher.init({
-            id: "wrapper",
-            pullDownAction: Refresh,
-            pullUpAction: Load
-        });
-        $(document).on('click', '.bbs_operation .focus', function () {
+	    refresher.info ={
+		    "pullDownLable": "Pull down to refresh...",
+		    "pullingDownLable": "Release to refresh...",
+		    "pullUpLable": "Pull up to load more...",
+		    "pullingUpLable": "Release to load more...",
+		    "loadingLable": "Loading..."
+	    }
+	    refresher.init({
+		    id:"wrapper",
+		    pullDownAction:Refresh,
+		    pullUpAction:Load
+	    });
+        $(document).on('click','.bbs_operation .focus', function () {
             var th = $(this).find('span');
             var is = th.hasClass('follow_active');
             if (!is) {
@@ -262,20 +257,21 @@
 
 
     function Refresh() {
-        setTimeout(function () {
+	    setTimeout(function () {
 
-            wrapper.refresh()
-            console.log(111)
-        }, 1000);
+		    wrapper.refresh()
+		    console.log(111)
+	    }, 1000);
 
     }
 
     function Load() {
-        setTimeout(function () {
+	    setTimeout(function () {
 
-            wrapper.refresh()
-            console.log(111)
-        }, 1000);
+		    wrapper.refresh()
+		    console.log(111)
+	    }, 1000);
     }
 
 </script>
+
